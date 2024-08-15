@@ -44,12 +44,10 @@ loader.load(
     model.position.set(0, 0, 0); // Center the model
     scene.add(model);
     console.log('Model loaded successfully:', model);
-  },
-  undefined,
-  function (error) {
-    console.error('An error occurred while loading the model:', error);
-  }
-);
+  });
+
+  const spaceTexture = new THREE.TextureLoader().load('greek_skies.jpg');
+  scene.background = spaceTexture;
 
 // Animation loop
 function animate() {
