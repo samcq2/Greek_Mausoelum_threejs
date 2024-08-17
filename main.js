@@ -38,7 +38,7 @@ floorMesh.receiveShadow = true;
 scene.add(floorMesh);
 
 // Lighting
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+const ambientLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(ambientLight);
 
 const spotlight = new THREE.SpotLight(0xffffff, 3);
@@ -51,7 +51,7 @@ scene.add(spotlight);
 // Controls
 const controls = new OrbitControls(camera, renderer.domElement);
 
-const mosaicTexture = new THREE.TextureLoader().load('greek_mosaic.jpg');
+const mosaicTexture = new THREE.TextureLoader().load('tiles.jpg');
 
 // GLTFLoader
 const loader = new GLTFLoader();
