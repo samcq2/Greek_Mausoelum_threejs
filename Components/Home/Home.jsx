@@ -21,7 +21,7 @@ const Home = () => {
     document.body.appendChild(renderer.domElement);
     const floorGeometry = new THREE.PlaneGeometry(300, 300);
     const loaderText = new THREE.TextureLoader();
-    const floorTexture = loaderText.load('greek_mosaic.jpg');
+    const floorTexture = loaderText.load('../../Pictures/greek_mosaic.jpg');
     
     floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
     floorTexture.repeat.set(10, 10); // Adjust to tile the texture
@@ -43,7 +43,7 @@ const Home = () => {
     scene.add(spotlight);
     
     const controls = new OrbitControls(camera, renderer.domElement);
-    const mosaicTexture = new THREE.TextureLoader().load('tiles.jpg');
+    const mosaicTexture = new THREE.TextureLoader().load('../../Pictures/tiles.jpg');
     
     const loader = new GLTFLoader();
 
@@ -64,7 +64,7 @@ const Home = () => {
         scene.add(model);
       });
 
-      const spaceTexture = new THREE.TextureLoader().load('greek_skies.jpg');
+      const spaceTexture = new THREE.TextureLoader().load('../../Pictures/greek_skies.jpg');
       scene.background = spaceTexture;
       
       function addStar() {

@@ -1,8 +1,8 @@
 import { Link, NavLink } from 'react-router-dom'
 import './sidebar.scss'
-import LogoS from '../../Samuel.png'
-import LogoC from '../../Clarke.png'
-import LogoQ from '../../Quy.png'
+import LogoS from '../../Pictures/Samuel.png'
+import LogoC from '../../Pictures/Clarke.png'
+import LogoQ from '../../Pictures/Quy.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
 import { faHome, faEnvelope, faCircleUser, faLandmark } from '@fortawesome/free-solid-svg-icons';
