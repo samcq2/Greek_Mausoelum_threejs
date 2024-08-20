@@ -5,7 +5,7 @@ import LogoC from '../../Clarke.png'
 import LogoQ from '../../Quy.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode } from '@fortawesome/free-solid-svg-icons'
-import { faHome, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faEnvelope, faCircleUser, faLandmark } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => (
@@ -17,14 +17,27 @@ const Sidebar = () => (
       <img src={LogoQ} alt="logo" className="sub-logo3"/>
     </Link>
     <nav>
-        <NavLink exact="true" activeclassname="active" to="/">
+
+        <NavLink exact="true" activeclassname="active" className="overview-link" to="/">
+            <FontAwesomeIcon icon={faLandmark} color="#f2e7bf" />
+
+        </NavLink>
+
+        <NavLink exact="true" activeclassname="active" className= "home-link" to="/home">
             <FontAwesomeIcon icon={faHome} color="#f2e7bf" />
 
         </NavLink>
-        <NavLink exact={true} activeclassname="active" className="projects-link" to="/projects">
+
+        <NavLink exact="true" activeclassname="active" className="about-link" to="/about">
+            <FontAwesomeIcon icon={faCircleUser} color="#f2e7bf" />
+
+        </NavLink>
+        
+        <NavLink exact="true" activeclassname="active" className="projects-link" to="/projects">
             <FontAwesomeIcon icon={faCode} color="#f2e7bf" />
 
         </NavLink>
+
         <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
             <FontAwesomeIcon icon={faEnvelope} color="#f2e7bf" />
 

@@ -51,7 +51,7 @@
         color: #f2e7bf;
         display: block;
         line-height: 10px;
-        height: 150px;
+        height: 75px;
         position: relative;
         text-decoration: none;
   
@@ -84,11 +84,25 @@
           -webkit-transition: all 0.3s ease-out;
           transition: all 0.3s ease-out;
         }
-  
-        &:first-child {
-          &:after {
+
+        
+      }
+
+      a.overview-link {
+        &:after {
+            content: 'OVERVIEW';
+        }
+      }
+
+      a.home-link {
+        &:after {
             content: 'HOME';
-          }
+        }
+      }
+
+      a.about-link {
+        &:after {
+            content: 'ABOUT ME';
         }
       }
 
@@ -114,7 +128,7 @@
 
     ul {
       position: absolute;
-      bottom: 20px;
+      bottom: 10px;
       width: 100%;
       display: block;
       padding: 0;
