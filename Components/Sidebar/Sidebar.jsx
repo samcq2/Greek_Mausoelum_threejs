@@ -18,28 +18,28 @@ const Sidebar = () => (
     </Link>
     <nav>
         <NavLink exact="true" activeclassname="active" to="/">
-            <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faHome} color="#f2e7bf" />
 
         </NavLink>
         <NavLink exact={true} activeclassname="active" className="projects-link" to="/projects">
-            <FontAwesomeIcon icon={faCode} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faCode} color="#f2e7bf" />
 
         </NavLink>
         <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
-            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faEnvelope} color="#f2e7bf" />
 
         </NavLink>
     </nav>
     <ul>
       <li>
         <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/samuelclarke-quy/'>
-          <FontAwesomeIcon icon={faLinkedin} color="#4d4d43" />
+          <FontAwesomeIcon icon={faLinkedin} color="#f2e7bf" />
         </a>
       </li>
 
       <li>
         <a target="_blank" rel='noreferrer' href='https://github.com/samcq2'>
-          <FontAwesomeIcon icon={faGithub} color="#4d4d43" />
+          <FontAwesomeIcon icon={faGithub} color="#f2e7bf" />
         </a>
       </li>
     </ul>
