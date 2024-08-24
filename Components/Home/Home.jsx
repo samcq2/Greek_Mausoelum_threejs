@@ -58,7 +58,7 @@ const Home = () => {
       camera.lookAt(model.position);
 
   
-      const zoomDuration = 500; // Duration in milliseconds
+      const zoomDuration = 2000; // Duration in milliseconds
   
       const startTime = performance.now();
 
