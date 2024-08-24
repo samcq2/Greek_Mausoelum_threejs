@@ -50,9 +50,41 @@ const Home = () => {
       model.position.set(0, -0.2, 0);
       scene.add(model);
 
-      camera.position.set(-2.5, 1, 1);
+      const startPosition = new THREE.Vector3(-6.9, 3.5, 0.5); 
+      camera.position.copy(startPosition);
+
+      const targetPosition = new THREE.Vector3(-2.2, 0.8, 0);
+
       camera.lookAt(model.position);
-    });
+
+  
+      const zoomDuration = 3000; // Duration in milliseconds
+  
+      const startTime = performance.now();
+
+  
+      function animateZoom() {
+    
+        const elapsed = performance.now() - startTime;
+    
+        const progress = Math.min(elapsed / zoomDuration, 1);
+        camera.position.lerpVectors(startPosition, targetPosition, progress);
+
+    
+        camera.lookAt(model.position); // Keep looking at the model's position
+
+    
+        if (progress < 1) {
+      
+            requestAnimationFrame(animateZoom);
+    
+        }
+  
+    }
+
+  
+    animateZoom();
+});
 
     const spaceTexture = new THREE.TextureLoader().load("../../Pictures/greek_skies.jpg");
     scene.background = spaceTexture;
@@ -76,6 +108,10 @@ const Home = () => {
     function animate() {
       requestAnimationFrame(animate);
       controls.update();
+      const floorLevel = 0.1;
+      if (camera.position.y < floorLevel) {
+        camera.position.y = floorLevel;
+      }
       renderer.render(scene, camera);
     }
     renderer.setAnimationLoop(animate);
