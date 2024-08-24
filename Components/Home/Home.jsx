@@ -1,10 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.scss";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
+
+    const [showLink, setShowLink] = useState(false);
+    
   useEffect(() => {
     // Scene setup
     const scene = new THREE.Scene();
@@ -79,6 +83,9 @@ const Home = () => {
             requestAnimationFrame(animateZoom);
     
         }
+        else {
+            setShowLink(true);
+          }
   
     }
 
@@ -137,7 +144,19 @@ const Home = () => {
     };
   }, []);
 
-  return null;
+  return (
+    <>
+      {showLink && (
+        <div className="About-container">
+          <nav>
+            <NavLink exact to="/" className="overview-link">
+              About me
+            </NavLink>
+          </nav>
+        </div>
+      )}
+    </>
+  );
 };
 
 export default Home;

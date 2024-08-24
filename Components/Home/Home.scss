@@ -1,0 +1,29 @@
+.About-container {
+    position: absolute; // Position it absolutely within its container
+    top: 100px; // Adjust based on where you want it
+    left: 680px; // Adjust based on where you want it
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    justify-content: center;
+    border:2px;
+    border-radius: 20px;
+    z-index: 10; // Ensure it's above other elements if necessary
+  
+    // Background styling for container
+    background-color: transparent; // Make background transparent
+    border-radius: 5px;
+  }
+  
+  .About-container .overview-link {
+    display: inline-block; // Allow padding and margin
+    color: #f2e7bf; // Text color
+    text-decoration: none; // Remove underline by default
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(51, 108, 206, 0.5);; // Semi-transparent background for the link
+  }
+  
+  .About-container .overview-link:hover {
+    color: #e7bd42; // Underline on hover
+  }
