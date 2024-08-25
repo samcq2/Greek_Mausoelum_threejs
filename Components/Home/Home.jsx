@@ -146,16 +146,37 @@ const Home = () => {
 
   return (
     <>
-      {showLink && (
+    {showLink && (
+      <div>
         <div className="About-container">
           <nav>
-            <NavLink exact to="/" className="overview-link">
+            <NavLink exact to="/" className="about-link">
               About me
             </NavLink>
           </nav>
         </div>
-      )}
-    </>
+        
+        <div className="tech-container">
+          <nav>
+            <NavLink exact to="/" className="tech-link">
+              Technical Projects
+            </NavLink>
+          </nav>
+        </div>
+
+        <div className="contact-container">
+          <nav>
+            <NavLink exact to="/" className="contact-link">
+              Contact me
+            </NavLink>
+          </nav>
+        </div>  
+      </div>
+    )}
+  </>
+    
+
+    
   );
 };
 
