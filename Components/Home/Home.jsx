@@ -150,7 +150,7 @@ const Home = () => {
       <div>
         <div className="About-container">
           <nav>
-            <NavLink exact to="/" className="about-link">
+            <NavLink exact to="/about" className="about-link">
               About me
             </NavLink>
           </nav>
