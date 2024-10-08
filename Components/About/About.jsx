@@ -82,8 +82,86 @@ const About = () => {
         window.removeEventListener("resize", handleResize);
       };
     }, []);
-  
-    return null; // This component handles its own rendering
-  };
+
+    return (
+        <div className="Desc-container">
+          <div id="name">
+
+            Samuel Clarke-Quy
+
+          </div>
+          <div id='welcome'>
+            Welcome to my portfolio website developed using React and ThreeJS!
+          </div>
+          <div id='education-and-employment-intro'>
+            My name is Samuel Clarke-Quy a Physics with Particle Physics student.
+            I am currently employed by Ten10 as a Trainee Junior Technical Consultant.
+          </div>
+
+          <div id='education1'>
+
+            At Queen Mary University of London I graduated with a bachelors of science
+            in Physics with Particle Physcis (BSc Physics with Particle Physics).
+
+          </div>
+
+          <div id='education7'>
+            
+            Physics as a degree is always something I have been passionate about from 
+            the world of Quantum Mechanics with applications in Quantum computing for the next
+            step in cumputing power to the use of data science techniques in Particle Physics.
+
+          </div>
+
+          <div id='education8'>
+            
+            By pursuing a specialisation in Particle Physics I was able to learn and apply many 
+            concepts in data science in assignments and projects including my dissertation.
+
+          </div>
+
+          <div id='education2'>
+
+            This included learning Python using Pandas to interact with and clean dataframes, as well as using libraries
+            to visualise and analyse segments of the dataframes using libraries such as MatPlotLib and
+            SeaBorn. Additionally at my time at univeristy I was able to learn and use R Language to 
+            visualise and interact with data frames.
+
+          </div>
+
+          <div id='education3'>
+
+            Another step in my up-skilling in data science at university was the use machine learning techniques
+            such Decision Trees, Logistic Regression, Naives Bayes machine learning models to analyse and produce 
+            hypothesis from data analysis performed on various dataframes.
+
+          </div>
+
+          <div id='education4'>
+
+            Some additional analytical techniques I developed at university included
+            Principal Component Analysis, cross-validation and Time Series Analysis.
+
+          </div>
+
+          <div id='education5'>
+            
+            My disseration topic was on Using Machine Learning Techniques to classify and search for products of
+            Neutrinos at DUNE.
+
+          </div>
+
+          <div id='education6'>
+            Another project at University was performing data analysis on Mexico City sensors for air pollutants and 
+            levels of traffic intensity in different areas to find correlations between the two.
+          </div>
+
+
+
+        </div>
+      );
+    };
+
+    
   
   export default About;

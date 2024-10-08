@@ -1,0 +1,86 @@
+.Desc-container {
+    position: absolute; // Position it absolutely within its container
+    top: 100px; // Adjust based on where you want it
+    left: 450px; 
+
+    max-height: 700px; /* Adjust the height as needed */
+    width: 40%; /* You can adjust the width to fit your design */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
+    background-color: rgba(51, 108, 206, 0.5);; /* Optional: Add a background color */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+#name  {
+    text-align: center;
+    display: inline-block; // Allow padding and margin
+    color: #e7bd42; // Text color
+    text-decoration: none; // Remove underline by default
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 50px;
+    
+  }
+
+#welcome {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#education-and-employment-intro {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#education1 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#education2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#education3 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#education4 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#education5 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#education6 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#education8 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#education7 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
