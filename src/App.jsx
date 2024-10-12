@@ -4,6 +4,7 @@ import Overview from '../Components/Overview/Overview.jsx';
 import Layout from '../Components/Layout/Layout.jsx';
 import Home from '../Components/Home/Home.jsx';
 import About from '../Components/About/About.jsx';
+import Projects from '../Components/Projects/Projects.jsx'
 
 
 const App = () => (
@@ -13,6 +14,7 @@ const App = () => (
         <Route index element={<Overview />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
             
       </Route>
     </Routes>
