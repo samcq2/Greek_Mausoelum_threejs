@@ -3,6 +3,13 @@ import "./Projects.scss";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import bandsocImage from '../../Pictures/bandsoc_frontpage.png'
+import bandsocAdmin1 from '../../Pictures/admin-1.png'
+import bandsocAdmin2 from '../../Pictures/admin-2.png'
+import stripe from '../../Pictures/stripe.png'
+import Home from '../../Pictures/portfolio-home.png';
+import Contact from '../../Pictures/portfolio-contact.png';
+import Projects from '../../Pictures/portfolio-projects.png';
 
 const About = () => {
 
@@ -151,26 +158,103 @@ style={{
             <div id='project1-title'>
               Full-stack booking page developed for Warwick Band Society
             </div>
+
+            <img src={bandsocImage} alt="Band Society" className="bandsoc-frontpage" />
+            
   
             <div id='project1-1'>
               This is a full-stack app for Warwick Band Society developed as per the requirements
               of the Bandsoc executives for a booking page which allows for automated booking 
               and integrated payment through the Stripe API.
             </div>
+
+            <img src={stripe} alt=" Stripe" className="stripe" />
+
+            <div id="project1-2">
+              Automated Booking System: Effortlessly book your practice rooms using credits,
+               purchasable via Stripe API.
+            </div>
+
+            <div id="project1-3">
+              Special Privileges for BOTB Bands: If you're in the Battle of The Bands, 
+              enjoy priority booking and extended schedule views through a unique BOTB admin portal.
+            </div>
+
+            <div id="project1-4">
+              Backend: 
+              Python, Stripe API, Fast API, AWS, PostgreSQL, 
+              Enhanced security via bcrypt, Docker for continuous running.
+            </div>
+
+            <div id="project1-5">
+              Frontend:
+              Crafted in React with Typescript, PrimeReact UI, Hosted with Vercel.
+            </div>
+
+            <div id="project1-6">
+              In addition to our brand-new booking system, 
+              we've also made an Admin Panel for Warwick Bandsoc executives
+              (see below).
+            </div>
+
+            <img src={bandsocAdmin2} alt="Band Society admin 1" className="bandsoc-admin-2" />
+            <img src={bandsocAdmin1} alt="Band Society admin 1" className="bandsoc-admin-1" />
+            
           </div>
         )}
 
         {isOpen4 && (
           <div className="button4-container">
               <div id='project2-title'>
-                  Employment
+                  Portfolio Web App
               </div>
 
               <div id='project2-1'>
-                  In my employment at Ten10 I was trained in a variety of areas within the technology industry including
-                  business analysis, manual testing, automated testing, development and data.
-                  This included languages such as Java, JavaScript, Python and SQL  with code editors such as 
-                  SQL Lite Studio, Oracle with SQL Developer, IntelliJ and VSCode.
+                  This is a portfolio website developed by myself using JavaScript with React,
+                  HTML and SCSS. The User Interface (UI) is made of different components including the
+                  Sidebar, Layout, Home, Projects and Contact. 
+              </div>
+              <img src={Home} alt="Band Society" className="Portfolio-Home" />
+
+              <div id="project2-2">
+                Technology Stack: JavaScript for coding the components with React, SCSS for styling and HTML for formatting.
+              </div>
+
+              <img src={Projects} alt="Band Society admin 1" className="Portfolio-Projects" />
+
+              <div id="project2-3">
+                Email Functionality: Integrated "emailjs" library
+                in the Contact component, enabling users to send
+                emails directly from the website, eliminating the
+                need for a server-side backend. Compatible with
+                email service providers like Gmail and Yahoo.
+              </div>
+
+              <img src={Contact} alt="Band Society admin 1" className="Portfolio-Contact" />
+
+              <div id="project2-4">
+                Map Location: Utilized React Leaflet library to
+                render a map with my location. Defined a map
+                container with a TileLayer attribution and url
+                parameters from maptiler.com for the specific map we want.
+                Added a marker to show my location by defining my longitude and
+                lattitude.
+              </div>
+
+              <div id="project2-5">
+                Navigation: Used NavLink to navigate between different pages within the multi-page portfolio website, providing
+                seamless switching between Home, Projects, and Contact sections.
+              </div>
+
+              <div id="project2-6">
+                FontAwesome Integration: Imported FontAwesome library to incorporate icons for GitHub, LinkedIn, Home,
+                Projects, and Contacts buttons/links, enhancing the user experience.
+              </div>
+
+              <div id="project2-7">
+                Projects Section: The Projects component contains JavaScript files and an SCSS file. These JavaScript files represents
+                different projects, and Navlink is used to render buttons that lead to these projects. Each JS file corresponds
+                to a specific project, and a parameter, activeClassName='active-link' is used to highlight the currently active file.
               </div>
           </div>
 

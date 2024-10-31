@@ -1,7 +1,7 @@
 
 .desc-container2 {
     position: absolute; // Position it absolutely within its container
-    top: 100px; // Adjust based on where you want it
+    top: 50px; // Adjust based on where you want it
     left: 450px; 
     height: 650px;
 
@@ -27,7 +27,7 @@
    height: 300px;
    padding: 10px;
    margin: 0 -600px;
-   top: 100px;
+   top: 50px;
    left: 795px; 
     
 
@@ -101,6 +101,41 @@
     font-family: 'Coolvetica';
 }
 
+#project1-2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#project1-3 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#project1-4 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#project1-5 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#project1-6 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
 #project2-title {
     padding: 10px;
     color: #e7bd42;
@@ -111,6 +146,42 @@
 }
 
 #project2-1 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-3 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-4 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-5 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-6 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-7 {
     color: #f2e7bf;
     padding: 15px;
     font-size: 20px;
@@ -150,3 +221,42 @@ i4 {
     right: -2px;
 
   }
+
+.bandsoc-frontpage {
+    width: 1000px;
+    height: 550px;
+    transform: translate(0px, 0px);
+}
+
+.bandsoc-admin-1 {
+    width: 1000px;
+    height: 500px;
+    transform: translate(0px, 10px);
+}
+
+.bandsoc-admin-2 {
+    width: 1000px;
+    height: 500px;
+    transform: translate(0px, 0px);
+}
+
+.stripe {
+    height:500px;
+    width:600px;
+    transform: translate(0px, 0px);
+}
+
+.Portfolio-Home {
+    height: 400px;
+    width: 750px;
+}
+
+.Portfolio-Projects {
+    height: 400px;
+    width:750px;
+}
+
+.Portfolio-Contact {
+    height: 400px;
+    width: 750px;
+}
