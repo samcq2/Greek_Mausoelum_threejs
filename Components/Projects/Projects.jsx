@@ -10,17 +10,29 @@ import stripe from '../../Pictures/stripe.png'
 import Home from '../../Pictures/portfolio-home.png';
 import Contact from '../../Pictures/portfolio-contact.png';
 import Projects from '../../Pictures/portfolio-projects.png';
+import HeatMap from '../../Pictures/UIZ_heatmap.png';
+import OverlayedHistPol from '../../Pictures/pollutants_overlayed.png';
+import OverlayedHistTraf from '../../Pictures/traffic_overlayed.png';
+import PolLoadings from '../../Pictures/loadings_plot_pollutants.png';
+import ScreePlot from '../../Pictures/pollutant_scree_plots.png';
 
 const About = () => {
 
     const [isOpen3, setIsOpen3] = useState(false);
     const [isOpen4, setIsOpen4] = useState(false);
+    const [isOpen5, setIsOpen5] = useState(false);
+
     const [activeButton3, setActiveButton3] = useState(null);
     const [activeButton4, setActiveButton4] = useState(null);
+    const [activeButton5, setActiveButton5] = useState(null);
+
     const [isHovered3, setIsHovered3] = useState(false);
     const [isHovered4, setIsHovered4] = useState(false);
+    const [isHovered5, setIsHovered5] = useState(false);
+
     const toggleArrow3 = document.getElementById("arrow3");
     const toggleArrow4 = document.getElementById("arrow4");
+    const toggleArrow5 = document.getElementById("arrow5");
 
     useEffect(() => {
       const scene = new THREE.Scene();
@@ -112,6 +124,12 @@ const About = () => {
       toggleArrow4.classList.toggle("arrow4");
     };
 
+    const toggleDropdown5 = () => {
+      setIsOpen5(!isOpen5);
+      setActiveButton5(activeButton5 === 'Mexico City Sensor Data Analysis' ? null : 'Mexico City Sensor Data Analysis');
+      toggleArrow5.classList.toggle("arrow5");
+    };
+
     return (
       <div className='wrapper-container'>
 
@@ -143,6 +161,18 @@ style={{
   }}>
     {isOpen4 ? "Original Portfolio Website": "Original Portfolio Website"}
     <i4 class="bx bx-chevron-down" id="arrow4"></i4>
+</button>
+
+<button className="dropdown_p3" onClick={toggleDropdown5}
+onMouseEnter={() => setIsHovered5(true)}
+onMouseLeave={() => setIsHovered5(false)}
+style={{
+    backgroundColor: activeButton5 === 'Mexico City Sensor Data Analysis' ? '#e7bd42' : isHovered5 ? '#e7bd42' : 'transparent',
+    color: activeButton5 === 'Mexico City Sensor Data Analysis' ? '#336cce' : isHovered5 ? '#336cce' : '#f2e7bf',  
+    
+  }}>
+    {isOpen5 ? 'Mexico City Sensor Data Analysis' : 'Mexico City Sensor Data Analysis'}
+    <i5 class="bx bx-chevron-down" id="arrow5"></i5>
 </button>
 
 </div>
@@ -259,6 +289,70 @@ style={{
           </div>
 
 
+        )}
+        
+        {isOpen5 && (
+          <div className="button5-container">
+              
+              <div id='project3-title'>
+                Pollution and Traffic Data Analysis From Mexico City Sensors
+              </div>
+
+              <div id='project3-1'>
+                In this data science project, I started by utilising R language within a
+                Jupyter Notebook environment to perform an in-depth
+                analysis of the data for the exploration section such as a Pearson corrleation heatmap (See below).
+              </div>
+
+              <img src={HeatMap} alt="Band Society" className="Heatmap" />
+
+              <div id='project3-3'>
+                The primary objectives were to explore data trends visually and calculate
+                and display visually  correlations between the traffic and pollutant variables 
+                using pre-installed libraries.
+              </div>
+
+              <div id='project3-4'>
+                I also utilised Python to to model the data using Principal
+                Component analysis (PCA) and train, test, split from Sklearn
+                library for both traffic data and pollution data separately.
+              </div>
+
+              <div id='project3-5'>
+                Python was also used in area characterisation to visualise the pixel
+                data for each sensor and define and apply procedures to
+                deduce how similar the sensor areas are.
+              </div>
+
+              <div id='project3-6'>
+                The project consisted of three main phases:
+              </div>
+
+              <div id='project3-7'>
+                Exploration: using histograms, overlaid histograms, correlation coefficient tables, all for each 
+                pollutant and traffic intensity along with correlation heatmaps for each sensor showing how 
+                the data behaves.
+              </div>
+
+              <img src={OverlayedHistPol} alt="Band Society admin 1" className="Hist-Pol" />
+              <img src={OverlayedHistTraf} alt="Band Society admin 1" className="Hist-Traf" />
+
+              <div id='project3-8'>
+                Modelling: modelled the data using train, test, split with Principal Component Analysis (PCA) 
+                for machine learning model Linear Regression, showing this visually with scree plot, scatter 
+                plots overlaid with principal component lines, loading plots for each principal component.
+              </div>
+
+              <img src={PolLoadings} alt="Band Society admin 1" className="Loadings-Pol" />
+              <img src={ScreePlot} alt="Band Society admin 1" className="Scree-Plot-Pol" />
+
+              <div id='project3-9'>
+                Area Characterisation: showed how the different pixel data by ring compares for each sensor, 
+                and defined a procedure using correlation coefficients to deduce whether different sensors are similar enough to be used in an aggregated way.
+              </div>
+
+
+          </div>
         )}
       </div>
       </div>

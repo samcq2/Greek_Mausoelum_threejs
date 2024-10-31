@@ -69,6 +69,22 @@
 
 }
 
+.dropdown_p3 {
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 70px;
+    width: 210px;
+    top: 210px;
+    left: 15px;
+    font-size: 21px;
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
 .button-container .dropdown1:hover {
     background-color: #e7bd42;
     color: #336cce;
@@ -186,6 +202,68 @@
     padding: 15px;
     font-size: 20px;
 }
+
+#project3-title {
+    color: #e7bd42;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+
+#project3-1 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-3 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-4 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-5 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-6 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-7 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-8 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-9 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
   
 .arrow3 {
     transform: rotate(270deg);
@@ -198,11 +276,23 @@
     transition: 0.2s ease;
     font-size: 2rem;
 }
+
+.arrow5 {
+    font-size: 2rem;
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+    font-size: 2rem;
+}
+
 .active #arrow4 {
     font-size: 2rem;
 }
 
 .active #arrow3 {
+    font-size: 2rem;
+}
+
+.active #arrow5 {
     font-size: 2rem;
 }
 
@@ -221,6 +311,14 @@ i4 {
     right: -2px;
 
   }
+
+i5 {
+    font-size: 2rem;
+    position: absolute; // Position it absolutely within its container
+    top: 25px; // Adjust based on where you want it
+    right: -2px;
+
+}
 
 .bandsoc-frontpage {
     width: 1000px;
@@ -259,4 +357,29 @@ i4 {
 .Portfolio-Contact {
     height: 400px;
     width: 750px;
+}
+
+.Heatmap {
+    height: 100px;
+    width: 100px;
+}
+
+.Hist-Pol {
+    height: 100px;
+    width: 100px;
+}
+
+.Hist-Traf {
+    height: 100px;
+    width: 100px;
+}
+
+.Loadings-Pol {
+    height: 100px;
+    width: 100px;
+}
+
+.Scree-Plot-Pol {
+    height: 100px;
+    width: 100px;
 }
