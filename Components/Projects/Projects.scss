@@ -24,7 +24,7 @@
    display: flex;
    justify-content: space-between;
    width: 220px;
-   height: 300px;
+   height: 500px;
    padding: 10px;
    margin: 0 -600px;
    top: 50px;
@@ -33,11 +33,6 @@
 
 }
 
-//.divider{
- //   width:15px;
-//    height:auto;
- //   display:inline-block;
-//}
 .dropdown_p1 {
     position: absolute; // Position it absolutely within its container
     top: 30px;
@@ -70,6 +65,38 @@
 }
 
 .dropdown_p3 {
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 70px;
+    width: 210px;
+    top: 300px;
+    left: 15px;
+    font-size: 21px;
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.dropdown_p4 {
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 100px;
+    width: 210px;
+    top: 390px;
+    left: 15px;
+    font-size: 21px;
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.dropdown_p5 {
     position: absolute;
     background-color: rgba(51, 108, 206, 0.5); 
     height: 70px;
@@ -264,6 +291,22 @@
     padding: 15px;
     font-size: 20px;
 }
+
+#project4-title {
+    color: #e7bd42;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+
+#project5-title {
+    color: #e7bd42;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
   
 .arrow3 {
     transform: rotate(270deg);
@@ -284,6 +327,20 @@
     font-size: 2rem;
 }
 
+.arrow6 {
+    font-size: 2rem;
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+    font-size: 2rem;
+}
+
+.arrow7 {
+    font-size: 2rem;
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+    font-size: 2rem;
+}
+
 .active #arrow4 {
     font-size: 2rem;
 }
@@ -293,6 +350,14 @@
 }
 
 .active #arrow5 {
+    font-size: 2rem;
+}
+
+.active #arrow6 {
+    font-size: 2rem;
+}
+
+.active #arrow7 {
     font-size: 2rem;
 }
 
@@ -317,6 +382,22 @@ i5 {
     position: absolute; // Position it absolutely within its container
     top: 25px; // Adjust based on where you want it
     right: -2px;
+
+}
+
+i6 {
+    font-size: 2rem;
+    position: absolute; // Position it absolutely within its container
+    top: 40px; // Adjust based on where you want it
+    right: -2px;
+
+}
+
+i7 {
+    font-size: 2rem;
+    position: absolute; // Position it absolutely within its container
+    top: 32px; // Adjust based on where you want it
+    right: -1px;
 
 }
 
@@ -360,26 +441,39 @@ i5 {
 }
 
 .Heatmap {
-    height: 100px;
-    width: 100px;
+    height: 500px;
+    width: 550px;
 }
 
 .Hist-Pol {
-    height: 100px;
-    width: 100px;
+    height: 500px;
+    width: 500px;
+    transform: translate(-10px, 0px);
 }
 
 .Hist-Traf {
-    height: 100px;
-    width: 100px;
+    height: 500px;
+    width: 500px;
 }
 
 .Loadings-Pol {
-    height: 100px;
-    width: 100px;
+    height: 1000px;
+    width: 1000px;
+}
+
+.Loadings-Traf {
+    height: 1000px;
+    width: 1000px;
 }
 
 .Scree-Plot-Pol {
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 500px;
+    transform: translate(-10px, 0px);
 }
+
+.Scree-Plot-Traf {
+    height: 300px;
+    width: 500px;
+}
+

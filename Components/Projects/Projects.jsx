@@ -14,25 +14,35 @@ import HeatMap from '../../Pictures/UIZ_heatmap.png';
 import OverlayedHistPol from '../../Pictures/pollutants_overlayed.png';
 import OverlayedHistTraf from '../../Pictures/traffic_overlayed.png';
 import PolLoadings from '../../Pictures/loadings_plot_pollutants.png';
-import ScreePlot from '../../Pictures/pollutant_scree_plots.png';
+import TrafLoadings from '../../Pictures/traffic_loadings_plot.png';
+import ScreePlotPol from '../../Pictures/pollutant_scree_plots.png';
+import ScreePlotTraf from '../../Pictures/traffic_scree_plot.png';
 
 const About = () => {
 
     const [isOpen3, setIsOpen3] = useState(false);
     const [isOpen4, setIsOpen4] = useState(false);
     const [isOpen5, setIsOpen5] = useState(false);
+    const [isOpen6, setIsOpen6] = useState(false);
+    const [isOpen7, setIsOpen7] = useState(false);
 
     const [activeButton3, setActiveButton3] = useState(null);
     const [activeButton4, setActiveButton4] = useState(null);
     const [activeButton5, setActiveButton5] = useState(null);
+    const [activeButton6, setActiveButton6] = useState(null);
+    const [activeButton7, setActiveButton7] = useState(null);
 
     const [isHovered3, setIsHovered3] = useState(false);
     const [isHovered4, setIsHovered4] = useState(false);
     const [isHovered5, setIsHovered5] = useState(false);
+    const [isHovered6, setIsHovered6] = useState(false);
+    const [isHovered7, setIsHovered7] = useState(false);
 
     const toggleArrow3 = document.getElementById("arrow3");
     const toggleArrow4 = document.getElementById("arrow4");
     const toggleArrow5 = document.getElementById("arrow5");
+    const toggleArrow6 = document.getElementById("arrow6");
+    const toggleArrow7 =  document.getElementById("arrow7");
 
     useEffect(() => {
       const scene = new THREE.Scene();
@@ -130,6 +140,20 @@ const About = () => {
       toggleArrow5.classList.toggle("arrow5");
     };
 
+    const toggleDropdown6 = () => {
+      setIsOpen6(!isOpen6);
+      setActiveButton6(activeButton6 === 'Airport Arrivals and Departures Time Series Analysis' ? null : 'Airport Arrivals and Departures Time Series Analysis');
+      toggleArrow6.classList.toggle("arrow6");
+    };
+
+    const toggleDropdown7 = () => {
+      setIsOpen7(!isOpen7);
+      setActiveButton7(activeButton7 === 'New Portoflio Website (Current)' ? null : 'New Portoflio Website (Current)');
+      toggleArrow7.classList.toggle("arrow7");
+    };
+
+
+
     return (
       <div className='wrapper-container'>
 
@@ -175,6 +199,29 @@ style={{
     <i5 class="bx bx-chevron-down" id="arrow5"></i5>
 </button>
 
+<button className="dropdown_p4" onClick={toggleDropdown6}
+onMouseEnter={() => setIsHovered6(true)}
+onMouseLeave={() => setIsHovered6(false)}
+style={{
+    backgroundColor: activeButton6 === 'Airport Arrivals and Departures Time Series Analysis' ? '#e7bd42' : isHovered6 ? '#e7bd42' : 'transparent',
+    color: activeButton6 === 'Airport Arrivals and Departures Time Series Analysis' ? '#336cce' : isHovered6 ? '#336cce' : '#f2e7bf',  
+    
+  }}>
+    {isOpen6 ? 'Airport Arrivals and Departures Time Series Analysis' : 'Airport Arrivals and Departures Time Series Analysis'}
+    <i6 class="bx bx-chevron-down" id="arrow6"></i6>
+</button>
+
+<button className="dropdown_p5" onClick={toggleDropdown7}
+onMouseEnter={() => setIsHovered7(true)}
+onMouseLeave={() => setIsHovered7(false)}
+
+style={{
+    backgroundColor: activeButton7 === 'New Portoflio Website (Current)' ? '#e7bd42' : isHovered7 ? '#e7bd42' : 'transparent',
+    color: activeButton7 === 'New Portoflio Website (Current)' ? '#336cce' : isHovered7 ? '#336cce' : '#f2e7bf',                  
+  }}>
+    {isOpen7 ? "New Portoflio Website (Current)" : "New Portoflio Website (Current)"}
+    <i7 class="bx bx-chevron-down" id="arrow7"></i7>
+</button>
 </div>
       
       <div className="desc-container2">
@@ -343,8 +390,11 @@ style={{
                 plots overlaid with principal component lines, loading plots for each principal component.
               </div>
 
-              <img src={PolLoadings} alt="Band Society admin 1" className="Loadings-Pol" />
-              <img src={ScreePlot} alt="Band Society admin 1" className="Scree-Plot-Pol" />
+              <img src={ScreePlotPol} alt="Band Society admin 1" className="Scree-Plot-Pol" />
+              <img src={ScreePlotTraf} alt="Band Society admin 1" className="Scree-Plot-Traf" />
+
+              <img src={PolLoadings} alt="Band Society admin 1" className="Loadings-Pol" />        
+              <img src={TrafLoadings} alt="Band Society admin 1" className="Loadings-Traf" />
 
               <div id='project3-9'>
                 Area Characterisation: showed how the different pixel data by ring compares for each sensor, 
@@ -354,6 +404,28 @@ style={{
 
           </div>
         )}
+        
+        {isOpen6 && (
+          <div className="button6-container">
+              
+              <div id='project4-title'>
+                Airport Arrivals and Departures Time Series Analysis
+              </div>
+
+          </div>
+        )}
+
+        {isOpen7 && (
+          <div className="button6-container">
+              
+              <div id='project5-title'>
+                Current Portfolio Websited Developed with React and ThreeJS
+              </div>
+
+          </div>
+        )}
+
+
       </div>
       </div>
     );
