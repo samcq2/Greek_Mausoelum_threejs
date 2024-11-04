@@ -3,6 +3,7 @@ import "./Projects.scss";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+
 import bandsocImage from '../../Pictures/bandsoc_frontpage.png'
 import bandsocAdmin1 from '../../Pictures/admin-1.png'
 import bandsocAdmin2 from '../../Pictures/admin-2.png'
@@ -17,6 +18,17 @@ import PolLoadings from '../../Pictures/loadings_plot_pollutants.png';
 import TrafLoadings from '../../Pictures/traffic_loadings_plot.png';
 import ScreePlotPol from '../../Pictures/pollutant_scree_plots.png';
 import ScreePlotTraf from '../../Pictures/traffic_scree_plot.png';
+
+import logscale_hr_vol from '../../Pictures/logscale_monthly_vol.png';
+import hr_vol from '../../Pictures/monthly_vol_year.png';
+import moving_average_logscale from '../../Pictures/moving_average_logscale.png';
+import dep_hr_vol from '../../Pictures/dep_hourly_vol.png';
+import exp_dec_weighted_avg from '../../Pictures/exp_decay.png';
+import rolling_mean_std from '../../Pictures/rolling_mean_rolling_std.png';
+import log_diff_shift from '../../Pictures/log_difference_shifting.png';
+import resid_seasonality from '../../Pictures/resid_Seasonality_og_trend.png';
+
+
 
 const About = () => {
 
@@ -411,6 +423,91 @@ style={{
               <div id='project4-title'>
                 Airport Arrivals and Departures Time Series Analysis
               </div>
+
+              <div id="project4-1">
+                In this project I leveraged an airport arrivals and departures dataset in the year of 2019
+                to perform Time Series Analysis. This allowed me to analyse the seasonality and periodicity
+                of the hourly volume of the departures throughout the year. This in turn allowed me to deduce
+                anomalies in the cycle for holidays like Christmas and Easter, as well strikes where there would be
+                no departures or a significant reduction in the departures from Heathrow Airport.
+              </div>
+
+              <img src={dep_hr_vol} className="departures_hourly_volume" />
+              <img src={hr_vol} className="hourly_volume" />
+
+              <div id="project4-2">
+                Firstly I read the csv file in using Pandas on Python in a Jupyter notebook and 
+                calculated the hourly volume of the departures from Heathrow Airport. The first_seen column
+                was initially in a UNIX Time Stamp date format which I converted using to_date and extracted the hour
+                with dt.hour. I then plotted the histogram fo the hourly volume using plt.hist with the departures by integer hour
+                with 24 hours. I also overlayed this with a normal distribution calculated using the mean and standard deviation from the NumPy 
+                library. I also defined a linespace and put this all with the norm.pdf() function for a probability
+                density function with plt.plot(). I then plotted the monthly volume of departures as a lineplot for each day in the year in a similar
+                way. (see above).
+              </div>
+              
+
+              <img src={logscale_hr_vol} className="logscale_hourly_volume" />
+              <img src={moving_average_logscale} className="moving_avg_logscale" />
+
+              <div id="project4-3">
+                To see the trends and anomalies in the periodicity/cycle of departures throughout the year
+                I calculated the logscale of the monthly volume of departures. Firstly I used the np.log() function on the monthly volume
+                and plotted it as I did previously. I then calculated the moving average with rolling function logscaled
+                monthly departure volume. This was overlayed onto the plot with monthly volume itself. (see above).
+              </div>
+
+              <div id="project4-4">
+                From the plot with overlayed moving average there are three anomalies two of which in terms days within the year correspond to
+                Christmas and Easter (around day 125 and day 205). The other anomaly corresponds to employee strikes (around day 145). 
+              </div>
+
+
+
+              <img src={rolling_mean_std } className="rolling_mean_std" />
+              <img src={log_diff_shift} className="log_diff_shift" />
+
+              <div id="project4-5">
+                In a similar way I calculated the moving average I also calculated the moving 
+                standard deviation by applying the rolling function with the std function on the
+                monthly volume. I then overlayed the moving average and moving stadnard deviation on the Original 
+                monthly volume. After this I calculated the log difference shift and plotted it.
+                I did this by taking away the logscale shift applying the shift() function to the logscale 
+                monthly volume from the logscale monthly volume. This was plotted using plt.plot(). 
+                (see above).
+              </div>
+
+
+              <img src={exp_dec_weighted_avg } className="exp_dec_Weighted_avg" />
+
+              <div id="project4-6">
+                Next, I calculated the exponential ddecay weighted average of the monthly volume.
+                This was done by applying the ewm() function for exponentially weighted calculations
+                and inputting the halflife parameter as 12 for 12 months in the year and applying the mean()
+                function to calculated the average for the exponetial decay. This was overlayed on the original 
+                monthly volume of departures plot. (see above).
+              </div>
+
+
+              <img src={resid_seasonality} className="resid_seasonality" />
+
+              <div id="project4-7">
+                Finally, I plotted the seasonality of the original, trend, seasonality and risiduality
+                in a tight layout for comparison. This was done firstly by using the seasonal_decompose function 
+                from the statsmodel.tsa.seasonal library, which used the monthly volume logscale data.
+                Then .trend, .seasonal and .resid were applied to the decomposition separately and all were plotted
+                on separate plots. The residual plot also had rolling mean and rolling standard deviation
+                overlayed onto the plot. This showed the seasonality and periodicity in more detail. As well as this 
+                the trend plot also showed the anomalies for Christmas, Easter and employee strikes more clearly
+                and therefore confirmed my intial hypotheses for why the departures dropped signifcantly
+                in the corresponding periods in 2019. (See above).
+              </div>
+
+
+
+
+
+
 
           </div>
         )}
