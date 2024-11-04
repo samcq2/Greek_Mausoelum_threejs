@@ -166,7 +166,7 @@ const Home = () => {
 
         <div className="contact-container">
           <nav>
-            <NavLink exact to="/" className="contact-link">
+            <NavLink exact to="/contact" className="contact-link">
               Contact me
             </NavLink>
           </nav>
