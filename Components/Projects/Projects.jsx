@@ -18,7 +18,6 @@ import PolLoadings from '../../Pictures/loadings_plot_pollutants.png';
 import TrafLoadings from '../../Pictures/traffic_loadings_plot.png';
 import ScreePlotPol from '../../Pictures/pollutant_scree_plots.png';
 import ScreePlotTraf from '../../Pictures/traffic_scree_plot.png';
-
 import logscale_hr_vol from '../../Pictures/logscale_monthly_vol.png';
 import hr_vol from '../../Pictures/monthly_vol_year.png';
 import moving_average_logscale from '../../Pictures/moving_average_logscale.png';
