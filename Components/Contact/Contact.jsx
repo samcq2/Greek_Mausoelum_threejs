@@ -84,6 +84,36 @@ const Contact = () => {
       };
     }, []);
 
+    return (
+        <div className='contact'>
+            <h1 className="contact-title">Contact Me</h1>
+            <form
+                id='contact-form'
+                className='contact-form'>
+                <input className="name"
+                    placeholder='name'
+                    type='text'
+                    name='name'
+                    required={true}
+                />
+                <input className="email"
+                    placeholder='email address'
+                    type='email'
+                    name='email'
+                    required={true}
+                />
+                <textarea className="input"
+                    maxLength={300}
+                    placeholder='message (max 300 characters)'
+                    name='message'
+                    required={true}
+                />
+                <button className= "submit" type='submit'>Submit</button>
+            </form>
+        </div>
+
+    );
+
 };
 
     export default Contact;
