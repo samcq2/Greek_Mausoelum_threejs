@@ -21,7 +21,7 @@ const Home = () => {
 
     const floorGeometry = new THREE.PlaneGeometry(300, 300);
     const loaderText = new THREE.TextureLoader();
-    const floorTexture = loaderText.load("../../Pictures/greek_mosaic.jpg");
+    const floorTexture = loaderText.load("../../static/images/greek_mosaic.jpg");
     floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
     floorTexture.repeat.set(10, 10);
 
@@ -39,7 +39,7 @@ const Home = () => {
     scene.add(spotlight);
 
     const controls = new OrbitControls(camera, renderer.domElement);
-    const mosaicTexture = new THREE.TextureLoader().load("../../Pictures/tiles.jpg");
+    const mosaicTexture = new THREE.TextureLoader().load("../../static/images/tiles.jpg");
 
     const loader = new GLTFLoader();
     loader.load("/Greek_Mausoleum_2.glb", function (gltf) {
@@ -93,7 +93,7 @@ const Home = () => {
     animateZoom();
 });
 
-    const spaceTexture = new THREE.TextureLoader().load("../../Pictures/greek_skies.jpg");
+    const spaceTexture = new THREE.TextureLoader().load("../../static/images/greek_skies.jpg");
     scene.background = spaceTexture;
 
     function addStar() {
