@@ -70,11 +70,22 @@
   }
 
   input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px rgba(51, 108, 206, 0.5) inset !important;
-}
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+      /* Remove the browser's default background for autofilled inputs */
+      background-color: white !important;  /* Or the color you want */
+      -webkit-box-shadow: 0 0 0 30px rgba(51, 108, 206, 0.5) inset !important;
+      color: #e7bd42 !important; /* Adjust text color if needed */
+      transition: background-color 5000s ease-in-out 0s !important; /* Prevent background-color flicker */
+      font-family: 'Coolvetica' !important;
+  }
+  
+  /* Optional: Make sure text inside autofilled inputs is also visible */
+  input:-webkit-autofill::first-line {
+      color: #e7bd42 !important;
+      font-family: 'Coolvetica' !important;
+  }
 
   .submit {
     font-size: 20px;
