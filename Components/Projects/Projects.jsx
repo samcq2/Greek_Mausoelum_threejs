@@ -27,7 +27,7 @@ import rolling_mean_std from '../../Pictures/rolling_mean_rolling_std.png';
 import log_diff_shift from '../../Pictures/log_difference_shifting.png';
 import resid_seasonality from '../../Pictures/resid_seasonality_og_trend.png';
 
-//fff
+//ffffff
 
 const About = () => {
 
