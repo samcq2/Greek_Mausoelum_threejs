@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cp -R dist/* /Users/samcq/Desktop/Greek_Mausoelum_threejs/contact_backend/ && rm -rf dist",
+    "build": "vite build && cp -R dist/* /Users/samcq/Desktop/Greek_Mausoelum_threejs/backend/ && rm -rf dist",
     "preview": "vite preview",
     "start": "node server.js"
   },
