@@ -1,0 +1,40 @@
+.layout-container {
+    display: flex; /* Use flexbox for layout */
+    width: 100px; /* Adjust to your desired fixed width */
+    margin: 0 auto; /* Center the layout horizontally */
+     /* Full viewport height, adjust if needed */
+  }
+  
+  .sidebar {
+    width: 200px; /* Fixed width for the sidebar */
+    background-color: #f2e7bf; /* Background color for the sidebar */
+    padding: 20px; /* Padding inside the sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for the sidebar */
+  }
+  
+
+  
+  .top-tags {
+    margin-top: 35px;
+  }
+  
+  .tags {
+    color: #ffd700;
+    opacity: 0.6;
+    font-size: 18px;
+    font-family: 'La Belle Aurore';
+  }
+  
+  .bottom-tag-html {
+    margin-left: -10px;
+  }
+  
+  .container {
+    width: 100%;
+    height: 90%;
+    min-height: 566px;
+    margin: 0 auto;
+    z-index: 1;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+  }

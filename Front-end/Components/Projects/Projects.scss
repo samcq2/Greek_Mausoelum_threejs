@@ -1,0 +1,572 @@
+
+.desc-container2 {
+    position: absolute; // Position it absolutely within its container
+    top: 50px; // Adjust based on where you want it
+    left: 450px; 
+    height: 650px;
+
+     /* Adjust the height as needed */
+    width: 68%; /* You can adjust the width to fit your design */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
+    background-color: rgba(51, 108, 206, 0.5); /* Optional: Add a background color */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+.button-container-p {
+   padding: 20px;
+   border: 1px solid #ccc;
+   background-color: rgba(51, 108, 206, 0.5);
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   width: 220px;
+   height: 500px;
+   padding: 10px;
+   margin: 0 -600px;
+   top: 50px;
+   left: 795px; 
+    
+
+}
+
+.dropdown_p1 {
+    position: absolute; // Position it absolutely within its container
+    top: 30px;
+    left: 15px; 
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 70px;
+    width: 210px;
+    font-size: 21px;
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+}
+
+.dropdown_p2 {
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 70px;
+    width: 210px;
+    top: 120px;
+    left: 15px;
+    font-size: 21px;
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.dropdown_p3 {
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 70px;
+    width: 210px;
+    top: 300px;
+    left: 15px;
+    font-size: 21px;
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.dropdown_p4 {
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 100px;
+    width: 210px;
+    top: 390px;
+    left: 15px;
+    font-size: 21px;
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.dropdown_p5 {
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 70px;
+    width: 210px;
+    top: 210px;
+    left: 15px;
+    font-size: 21px;
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.button-container .dropdown1:hover {
+    background-color: #e7bd42;
+    color: #336cce;
+  }
+  
+#title  {
+    text-align: center;
+    display: inline-block; // Allow padding and margin
+    color: #e7bd42; // Text color
+    text-decoration: none; // Remove underline by default
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 50px;
+    font-family: 'Coolvetica';
+    
+  }
+
+#project1-title {
+    color: #e7bd42;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+
+#project1-1 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#project1-2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#project1-3 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#project1-4 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#project1-5 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#project1-6 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#project2-title {
+    padding: 10px;
+    color: #e7bd42;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+
+}
+
+#project2-1 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-3 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-4 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-5 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-6 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project2-7 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-title {
+    color: #e7bd42;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+
+#project3-1 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-3 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-4 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-5 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-6 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-7 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-8 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project3-9 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project4-title {
+    color: #e7bd42;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+
+#project4-1 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project4-2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project4-2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project4-3 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project4-4 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project4-5 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project4-6 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project4-7 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#project5-title {
+    color: #e7bd42;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+  
+.arrow3 {
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+}
+
+.arrow4 {
+    font-size: 2rem;
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+    font-size: 2rem;
+}
+
+.arrow5 {
+    font-size: 2rem;
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+    font-size: 2rem;
+}
+
+.arrow6 {
+    font-size: 2rem;
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+    font-size: 2rem;
+}
+
+.arrow7 {
+    font-size: 2rem;
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+    font-size: 2rem;
+}
+
+.active #arrow4 {
+    font-size: 2rem;
+}
+
+.active #arrow3 {
+    font-size: 2rem;
+}
+
+.active #arrow5 {
+    font-size: 2rem;
+}
+
+.active #arrow6 {
+    font-size: 2rem;
+}
+
+.active #arrow7 {
+    font-size: 2rem;
+}
+
+i3 {
+    font-size: 2rem;
+    position: absolute; // Position it absolutely within its container
+    top: 17px; // Adjust based on where you want it
+    right: -3px;
+
+  }
+
+i4 {
+    font-size: 2rem;
+    position: absolute; // Position it absolutely within its container
+    top: 18px; // Adjust based on where you want it
+    right: -2px;
+
+  }
+
+i5 {
+    font-size: 2rem;
+    position: absolute; // Position it absolutely within its container
+    top: 25px; // Adjust based on where you want it
+    right: -2px;
+
+}
+
+i6 {
+    font-size: 2rem;
+    position: absolute; // Position it absolutely within its container
+    top: 40px; // Adjust based on where you want it
+    right: -2px;
+
+}
+
+i7 {
+    font-size: 2rem;
+    position: absolute; // Position it absolutely within its container
+    top: 32px; // Adjust based on where you want it
+    right: -1px;
+
+}
+
+.bandsoc-frontpage {
+    width: 1000px;
+    height: 550px;
+    transform: translate(0px, 0px);
+}
+
+.bandsoc-admin-1 {
+    width: 1000px;
+    height: 500px;
+    transform: translate(0px, 10px);
+}
+
+.bandsoc-admin-2 {
+    width: 1000px;
+    height: 500px;
+    transform: translate(0px, 0px);
+}
+
+.stripe {
+    height:500px;
+    width:600px;
+    transform: translate(0px, 0px);
+}
+
+.Portfolio-Home {
+    height: 400px;
+    width: 750px;
+}
+
+.Portfolio-Projects {
+    height: 400px;
+    width:750px;
+}
+
+.Portfolio-Contact {
+    height: 400px;
+    width: 750px;
+}
+
+.Heatmap {
+    height: 500px;
+    width: 550px;
+}
+
+.Hist-Pol {
+    height: 500px;
+    width: 500px;
+    transform: translate(-10px, 0px);
+}
+
+.Hist-Traf {
+    height: 500px;
+    width: 500px;
+}
+
+.Loadings-Pol {
+    height: 1000px;
+    width: 1000px;
+}
+
+.Loadings-Traf {
+    height: 1000px;
+    width: 1000px;
+}
+
+.Scree-Plot-Pol {
+    height: 300px;
+    width: 500px;
+    transform: translate(-10px, 0px);
+}
+
+.Scree-Plot-Traf {
+    height: 300px;
+    width: 500px;
+}
+
+.departures_hourly_volume {
+    height: 400px;
+    width: 500px;
+    transform: translate(-10px, 0px);
+}
+
+.hourly_volume {
+    height: 400px;
+    width: 500px;
+    transform: translate(10px, 0px);
+}
+
+.logscale_hourly_volume {
+    height: 400px;
+    width: 500px;
+    transform: translate(-10px, 0px);
+}
+
+.moving_avg_logscale {
+    height: 400px;
+    width: 500px;
+    transform: translate(10px, 0px);
+}
+
+.rolling_mean_std {
+    height: 400px;
+    width: 500px;
+    transform: translate(-10px, 0px);
+}
+
+.log_diff_shift {
+    height: 400px;
+    width: 500px;
+    transform: translate(10px, 0px);
+}
+
+.exp_dec_Weighted_avg {
+    height: 500px;
+    width: 800px;
+}
+
+.resid_seasonality {
+    height: 500px;
+    width: 800px;
+}

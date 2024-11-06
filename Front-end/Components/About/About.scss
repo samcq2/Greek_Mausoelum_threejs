@@ -1,0 +1,248 @@
+.desc-container {
+    position: absolute; // Position it absolutely within its container
+    top: 100px; // Adjust based on where you want it
+    left: 450px; 
+
+    max-height: 700px; /* Adjust the height as needed */
+    width: 40%; /* You can adjust the width to fit your design */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
+    background-color: rgba(51, 108, 206, 0.5); /* Optional: Add a background color */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    padding: 10px;
+    margin: 0 150px;
+    
+
+}
+
+.divider{
+    width:15px;
+    height:auto;
+    display:inline-block;
+}
+.dropdown1 {
+    //position: absolute; // Position it absolutely within its container
+    //top: 240px;
+    //left: 450px; 
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 50px;
+    width: 190px;
+    font-size: 21px;
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+}
+
+.dropdown2 {
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 50px;
+    width: 198px;
+    font-size: 21px;
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.button-container .dropdown1:hover {
+    background-color: #e7bd42;
+    color: #336cce;
+  }
+  
+#name  {
+    text-align: center;
+    display: inline-block; // Allow padding and margin
+    color: #e7bd42; // Text color
+    text-decoration: none; // Remove underline by default
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 50px;
+    font-family: 'Coolvetica';
+    
+  }
+
+#welcome {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#education-and-employment-intro {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#education-title {
+    color: #e7bd42;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+
+#education1 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#education2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#education3 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#education4 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#education5 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#education6 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#education8 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#education7 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#employment1 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Coolvetica';
+}
+
+#employment-title {
+    padding: 10px;
+    color: #e7bd42;
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+
+}
+
+#employment2 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#employment3 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#employment4 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#employment5 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#employment6 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#employment7 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#employment8 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#employment9 {
+    color: #f2e7bf;
+    padding: 15px;
+    font-size: 20px;
+}
+  
+.arrow {
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+}
+
+.arrow2 {
+    font-size: 2rem;
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+    font-size: 2rem;
+}
+.active #arrow2 {
+    font-size: 2rem;
+}
+
+i {
+    font-size: 2rem;
+    position: absolute; // Position it absolutely within its container
+    top: 241px; // Adjust based on where you want it
+    right: 365px;
+
+  }
+
+i2 {
+    font-size: 2rem;
+    position: absolute; // Position it absolutely within its container
+    top: 241px; // Adjust based on where you want it
+    right: 170px;
+
+  }

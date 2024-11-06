@@ -1,0 +1,115 @@
+.contact {
+    position: absolute; // Position it absolutely within its container
+    top: 50px; // Adjust based on where you want it
+    left: 450px; 
+    height: 650px;
+
+     /* Adjust the height as needed */
+    width: 30%; /* You can adjust the width to fit your design */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
+    background-color: rgba(51, 108, 206, 0.5); /* Optional: Add a background color */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden;
+    text-align: center;
+  }
+  
+  .email {
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    background-color: rgba(51, 108, 206, 0.5);
+    font-family: 'Coolvetica';
+    color: #e7bd42;
+    border-radius: 2px;
+    border: 2px solid #e7bd42;
+  }
+
+  .email::placeholder {
+    font-size: 20px;
+    color: #e7bd42;
+    font-family: 'Coolvetica';
+
+  }
+
+  .name {
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    background-color: rgba(51, 108, 206, 0.5);
+    font-family: 'Coolvetica';
+    color: #e7bd42;
+    border-radius: 2px;
+    border: 2px solid #e7bd42;
+  }
+
+  .name::placeholder {
+    font-size: 20px;
+    color: #e7bd42;
+    font-family: 'Coolvetica';
+
+  }
+
+  .input {
+    font-size: 20px;
+    height: 300px;
+    width: 300px;
+    background-color: rgba(51, 108, 206, 0.5) !important;
+    font-family: 'Coolvetica';
+    color: #e7bd42;
+    border-radius: 2px;
+    border: 2px solid #e7bd42 !important;
+  }
+
+.input::placeholder {
+    font-size: 20px !important;
+    color: #e7bd42 !important;
+    font-family: 'Coolvetica' !important;
+
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+      /* Remove the browser's default background for autofilled inputs */
+      background-color: white !important;  /* Or the color you want */
+      -webkit-box-shadow: 0 0 0 30px rgba(51, 108, 206, 0.5) inset !important;
+      color: #e7bd42 !important; /* Adjust text color if needed */
+      transition: background-color 5000s ease-in-out 0s !important; /* Prevent background-color flicker */
+      font-family: 'Coolvetica' !important;
+  }
+  
+  /* Optional: Make sure text inside autofilled inputs is also visible */
+  input:-webkit-autofill::first-line {
+      color: #e7bd42 !important;
+      font-family: 'Coolvetica' !important;
+  }
+
+  .submit {
+    font-size: 20px;
+    height: 50px;
+    width: 300px;
+    background-color: rgba(51, 108, 206, 0.5);
+    font-family: 'Coolvetica';
+    color: #e7bd42;
+    border-radius: 2px;
+    border: 2px solid #e7bd42;
+  }
+
+  .submit:hover {
+    background-color: #e7bd42;
+    color: #336cce;
+  }
+  
+  .contact-title {
+    text-align: center;
+    display: inline-block; // Allow padding and margin
+    color: #e7bd42; // Text color
+    text-decoration: none; // Remove underline by default
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 50px;
+    font-family: 'Coolvetica';
+  }
