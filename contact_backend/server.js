@@ -6,7 +6,7 @@ var cors = require('cors');
 
 const fs = require('fs');
 const creds = require('./config');
-
+const passphrase = 'SamuelCQ2345';
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -19,11 +19,12 @@ const serverPort = 5001;
 const httpsServer = https.createServer(
     {
         key: fs.readFileSync(
-            'path-to-privkey.pem'
+            './privkey.pem'
         ),
         cert: fs.readFileSync(
-            'path-to-cert.pem'
+            './cert.pem'
         ),
+        passphrase: passphrase
     },
     app
 );
