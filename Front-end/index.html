@@ -9,20 +9,20 @@
   </head>
   <body>
     <div id="root"></div> <!-- Changed from id="app" to id="root" -->
+    <script type="importmap">
+      {
+          "imports": {
+          "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.161.0/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.161.0/examples/jsm/"
+          }
+      }
+    </script>
     <script type="module" src="/src/main.jsx"></script> <!-- Use the correct entry point -->
+    
   </body>
-  <script type="importmap">
-    {
-        "imports": {
-        "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.161.0/three.module.js",
-         "three/addons/": "https://unpkg.com/three@v0.161.0/examples/jsm/"
-        }
-     }
-</script>
-<style>
-body {
-  margin: 0;
-}
-</style>
-<script type="module" src="/tetrahedron.js"></script>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
 </html>
