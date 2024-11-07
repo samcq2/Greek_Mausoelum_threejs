@@ -26,6 +26,11 @@ import exp_dec_weighted_avg from '../../Pictures/exp_decay.png';
 import rolling_mean_std from '../../Pictures/rolling_mean_rolling_std.png';
 import log_diff_shift from '../../Pictures/log_difference_shifting.png';
 import resid_seasonality from '../../Pictures/resid_seasonality_og_trend.png';
+import threejs_overview from '../../Pictures/threejs_overview.png';
+import threejs_contact from '../../Pictures/threejs_contact.png';
+import threejs_home from '../../Pictures/threejs_home.png';
+import threejs_projects from  '../../Pictures/threejs_projects.png';
+import threejs_about_me from '../../Pictures/threejs_about_me.png';
 
 //ffffff
 
@@ -518,6 +523,12 @@ style={{
                 Current Portfolio Websited Developed with React and ThreeJS
               </div>
 
+              <img src={threejs_overview} className="threejs_overview" />
+              <img src={threejs_home} className="threejs_home" />
+              <img src={threejs_about_me} className="threejs_about_me" />
+              <img src={threejs_projects} className="threejs_projects" />
+              <img src={threejs_contact} className="threejs_contact" />
+
           </div>
         )}
 
@@ -527,9 +538,5 @@ style={{
     );
 
     };
-
-
-
-    
   
   export default About;
