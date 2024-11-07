@@ -15,7 +15,7 @@ app.use('/', router);
 app.get('/', (req, res) => {
     res.json('hi');
 });
-const serverPort = 5001;
+const serverPort = process.env.PORT || 4000;
 const httpsServer = https.createServer(
     {
         key: fs.readFileSync(
