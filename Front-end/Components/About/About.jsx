@@ -211,20 +211,20 @@ const About = () => {
                     Employment
                 </div>
 
-                <div id='employment1'>
+                {/* <div id='employment1'>
                     In my employment at Ten10 I was trained in a variety of areas within the technology industry including
                     business analysis, manual testing, automated testing, development and data.
                     This included languages such as Java, JavaScript, Python and SQL  with code editors such as 
                     SQL Lite Studio, Oracle with SQL Developer, IntelliJ and VSCode.
-                </div>
+                  </div> 
 
-                <div id='employment2'>
+                  <div id='employment2'>
 
                     In core training we covered manual testing and automated testing extensively by writing
                     test scripts and test plans covering tests such as black box testing, white box testing,
                     unit testing, integration testing, etc.
-
-                </div>
+                    
+                  </div>
 
                 <div id='employment3'>
 
@@ -232,8 +232,8 @@ const About = () => {
                     Java development by programming a Rock, Paper, Scissor game which asks the user for an input and generates
                     a random response for the opponent and tallies the wins and losses with the robot opponent. I also added exceptions
                     for when the user types an unrecognised input in the terminal.
-
-                </div>
+                    
+                  </div>
 
                 <div id='employment4'>
 
@@ -289,7 +289,7 @@ const About = () => {
                     project on dirty data parsing the cleaned data into Tableau to creating a highly interactive
                      presentation with dashboards in stories.
 
-                </div>
+          </div> */}
 
 
             </div>
