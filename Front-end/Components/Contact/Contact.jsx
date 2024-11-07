@@ -10,6 +10,9 @@ const Contact = () => {
         email: '',
         message: '',
     });
+  
+
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:10000';
 
     const [result, setResult] = useState('');
 
@@ -124,7 +127,7 @@ const Contact = () => {
         };
 
         try {
-            let response = await fetch('http://localhost:5001/send', {
+            let response = await fetch(`${apiUrl}/send`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json;charset=utf-8',
