@@ -1,8 +1,8 @@
 .contact {
     position: absolute; // Position it absolutely within its container
     top: 50px; // Adjust based on where you want it
-    left: 450px; 
-    height: 650px;
+    left: 600px; 
+    height: 670px;
 
      /* Adjust the height as needed */
     width: 30%; /* You can adjust the width to fit your design */
@@ -112,4 +112,8 @@
     border-radius: 15px;
     font-size: 50px;
     font-family: 'Coolvetica';
+  }
+
+  .result {
+    color: #e7bd42;
   }

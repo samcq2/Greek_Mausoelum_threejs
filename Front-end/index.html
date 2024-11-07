@@ -4,11 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     <title>glb scene</title>
   </head>
   <body>
     <div id="root"></div> <!-- Changed from id="app" to id="root" -->
     <script type="module" src="/src/main.jsx"></script> <!-- Use the correct entry point -->
   </body>
+  <script type="importmap">
+    {
+        "imports": {
+        "three": "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.161.0/three.module.js",
+         "three/addons/": "https://unpkg.com/three@v0.161.0/examples/jsm/"
+        }
+     }
+</script>
+<style>
+body {
+  margin: 0;
+}
+</style>
+<script type="module" src="/tetrahedron.js"></script>
 </html>

@@ -184,7 +184,7 @@ const Contact = () => {
                     onChange={handleEmailFormChange}
                 />
                 <button className= "submit" type='submit'>{status}</button>
-                <h3>{result}</h3>
+                <h3 className="result">{result}</h3>
             </form>
         </div>
 
