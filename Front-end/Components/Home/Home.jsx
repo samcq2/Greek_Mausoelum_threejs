@@ -6,8 +6,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { NavLink } from "react-router-dom";
 
 const Home = () => {
-
-    const [showLink, setShowLink] = useState(false);
+  const [showLink, setShowLink] = useState(false);
     
   useEffect(() => {
     // Scene setup
