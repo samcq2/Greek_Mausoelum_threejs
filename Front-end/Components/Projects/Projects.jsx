@@ -523,10 +523,49 @@ style={{
                 Current Portfolio Websited Developed with React and ThreeJS
               </div>
 
+              <div id='project5-1'>
+                This is a full-stack portfolio website developed in the front-end using JavaScript with ThreeJS and React libraries. 
+                I used ThreeJS to personalise my website making my own models using Blender and exporting the model as a glb file and imported
+                it into the ThreeJS scripts. I developed ThreeJS scenes in the use effect using this model adding textures to to the floor and background (sky)
+                in the scene. I also added perspective camera positions and the level of ambient light in the scene.
+              </div>
+
               <img src={threejs_overview} className="threejs_overview" />
+
+              <div id='project5-2'>
+                As well as the base scene in the use effect for the Home page I also developed animations closer to the model by using defining the start position and 
+                target positions as constants. Aftet his I defined an animate zooom function defining the time elapsed for the zoom, lerpvectors function 
+                to alter the camera position in the zoom and finally the lookat function on the position of the model to make sure during the zoom it is focused on the 
+                glb model I exported. This zoom is initiated when you click the Home button in the side navbar.
+              </div>
+
               <img src={threejs_home} className="threejs_home" />
+
+              <div id='project5-3'>
+                For the about me page I designed a new model on Blender and again exported the glb file to the directory, importing it into the 
+                scene as I did before with the same methods for perspective camera, animation, camera position, spotlight and ambient light.
+                Here is where I utilised React to show drop downs for my education background and employment background. Here I defined toggle dropdown functions, using it 
+                to dropdown the text when it is clicked as well as integrating hover characteristics. As well as this I defined associated arrow to each dropdown button defining in SCSS
+                a rotation of 270 degrees, so it is clear which button is open.
+              </div>
+
               <img src={threejs_about_me} className="threejs_about_me" />
+
+              <div id="project5-4">
+                In the same way I developed the About ThreeJS scene with animations and perspective camera, I developed the Projects page which displays
+                my technical project portfolio using React. This includes images and descriptions in details of my projects, it is essentially the code as the 
+                About page except there are more toggle dropdown buttons with arrows defined for the multiple technical projects I have done.
+              </div>
+
               <img src={threejs_projects} className="threejs_projects" />
+
+              <div id="projects5-5">
+                Finally on he front end using the same ThreeJS use effect but a different react components to develop a front-end contact form to send emails to 
+                my work email account. This was linked to NodeJS back-end which I first tested locally with a server.js and config.js file. To enhance security I utilised
+                cert.perm and privkey.pem files with a dedicated passkey to create the http server. I defined exceptions resulting in success or fail messages
+                depending if the email is sent successfully or not. I also defined an automated message that it sends to the person who fills out the form when their email is 
+                successfully sent. This ensures that the user knows their email has been recieved. I then hosted this on the cloud using render.com.
+              </div>
               <img src={threejs_contact} className="threejs_contact" />
 
           </div>
