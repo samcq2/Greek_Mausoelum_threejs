@@ -1,9 +1,6 @@
 
-.container {
-  background-color: transparent;
-}
 .About-container {
-  
+  position: absolute;
   top: 10vh;  // 10% of viewport height
   left: 50%;  // Centers the container horizontally
   transform: translateX(-50%);  // Ensures perfect horizontal centering
@@ -16,7 +13,6 @@
   z-index: 10;
   background-color: transparent;
   border-radius: 5px;
-  gap: 2vw;
 
   .about-link {
     display: inline-block;
@@ -38,7 +34,7 @@
 }
 
 .tech-container {
-  
+  position: absolute;
   top: 30vh;  // 30% of viewport height
   left: 50%;  // Centers the container horizontally
   transform: translateX(-50%);  // Ensures perfect horizontal centering
@@ -51,7 +47,6 @@
   z-index: 10;
   background-color: transparent;
   border-radius: 5px;
-  gap: 2vw;
 
   .tech-link {
     display: inline-block;
@@ -72,7 +67,7 @@
 }
 
 .contact-container {
-  
+  position: absolute;
   top: 50vh;  // 50% of viewport height
   left: 50%;  // Centers the container horizontally
   transform: translateX(-50%);  // Ensures perfect horizontal centering
@@ -85,7 +80,6 @@
   z-index: 10;
   background-color: transparent;
   border-radius: 5px;
-  gap: 2vw;
 
   .contact-link {
     display: inline-block;
@@ -105,19 +99,15 @@
   }
 }
 
-
 // Automatically adjusts size based on the viewport
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden; 
-  background-color: transparent;
+  overflow: hidden;  // Optional: prevents scrollbars from appearing if content overflows
 }
 
 .About-container,
 .tech-container,
 .contact-container {
-  border: none; 
-  background-color: transparent;
-  box-shadow: none;
+  border: none;  /* Removes the border */
 }

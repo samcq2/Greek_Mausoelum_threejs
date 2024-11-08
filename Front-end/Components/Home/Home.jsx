@@ -146,7 +146,7 @@ const Home = () => {
   return (
     <>
     {showLink && (
-      <div className="container">
+      <div>
         <div className="About-container">
           <nav>
             <NavLink exact to="/about" className="about-link">
