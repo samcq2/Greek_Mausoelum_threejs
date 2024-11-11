@@ -1,10 +1,12 @@
 .desc-container {
     position: absolute; // Position it absolutely within its container
-    top: 100px; // Adjust based on where you want it
-    left: 450px; 
-
-    max-height: 700px; /* Adjust the height as needed */
-    width: 40%; /* You can adjust the width to fit your design */
+    display: flex;
+    top: 15vh; // Adjust based on where you want it
+    left: 23vw; 
+    text-align: center;
+    flex-direction: column;
+    max-height: 75vh; /* Adjust the height as needed */
+    width: 50vw; /* You can adjust the width to fit your design */
     margin: 0 auto; /* Center the container */
     padding: 20px;
     border: 1px solid #ccc; /* Optional: Add a border for visibility */
@@ -17,44 +19,43 @@
 .button-container {
     display: flex;
     justify-content: space-between;
-    width: 350px;
+    width: 23vw;
     padding: 10px;
-    margin: 0 150px;
-    
+    margin: 1vh 13vw;
 
+    i {
+        font-size: 2rem;
+        position: absolute; // Position it absolutely within its container
+        top: 36.3vh; // Adjust based on where you want it
+        right: 27.2vw;
+    
+      }
+    
+    i2 {
+        font-size: 2rem;
+        position: absolute; // Position it absolutely within its container
+        top: 36.3vh; // Adjust based on where you want it
+        right: 14.7vw;
+    
+      }
 }
+
 
 .divider{
     width:15px;
     height:auto;
     display:inline-block;
 }
-.dropdown1 {
-    //position: absolute; // Position it absolutely within its container
-    //top: 240px;
-    //left: 450px; 
+.dropdown1, .dropdown2 { /* Apply similar styles for consistency */
     background-color: rgba(51, 108, 206, 0.5); 
-    height: 50px;
-    width: 190px;
-    font-size: 21px;
+    height: 7vh; /* Same height for both buttons */
+    width: 30vw; /* Set a consistent width unit for both dropdowns */
+    font-size: calc(1vh + 1vw);
     font-family: 'Coolvetica';
     color: #f2e7bf;
     border-radius: 10px;
     border: 2px solid #e7bd42;
     text-decoration: underline;
-}
-
-.dropdown2 {
-    background-color: rgba(51, 108, 206, 0.5); 
-    height: 50px;
-    width: 198px;
-    font-size: 21px;
-    font-family: 'Coolvetica';
-    color: #f2e7bf;
-    border-radius: 10px;
-    border: 2px solid #e7bd42;
-    text-decoration: underline;
-
 }
 
 .button-container .dropdown1:hover {
@@ -67,9 +68,9 @@
     display: inline-block; // Allow padding and margin
     color: #e7bd42; // Text color
     text-decoration: none; // Remove underline by default
-    padding: 10px;
+    padding: 2vw 5vw;
     border-radius: 15px;
-    font-size: 50px;
+    font-size: calc(2vw + 2vh);
     font-family: 'Coolvetica';
     
   }
@@ -234,15 +235,15 @@
 i {
     font-size: 2rem;
     position: absolute; // Position it absolutely within its container
-    top: 241px; // Adjust based on where you want it
-    right: 365px;
+    top: 36.3vh; // Adjust based on where you want it
+    right: 27.2vw;
 
   }
 
 i2 {
     font-size: 2rem;
     position: absolute; // Position it absolutely within its container
-    top: 241px; // Adjust based on where you want it
-    right: 170px;
+    top: 36.3vh; // Adjust based on where you want it
+    right: 14.7vw;
 
   }
