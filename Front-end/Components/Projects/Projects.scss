@@ -1,12 +1,14 @@
 
 .desc-container2 {
+    display: flex;
     position: absolute; // Position it absolutely within its container
-    top: 50px; // Adjust based on where you want it
-    left: 450px; 
-    height: 650px;
+    top: 10vh; // Adjust based on where you want it
+    left: 30vw; 
+    height: 73vh;
+    text-align: center;
 
      /* Adjust the height as needed */
-    width: 68%; /* You can adjust the width to fit your design */
+    width: 65vw; /* You can adjust the width to fit your design */
     margin: 0 auto; /* Center the container */
     padding: 20px;
     border: 1px solid #ccc; /* Optional: Add a border for visibility */
@@ -17,19 +19,19 @@
   }
 
 .button-container-p {
+    display: flex;
    padding: 20px;
    border: 1px solid #ccc;
    background-color: rgba(51, 108, 206, 0.5);
    position: absolute;
    display: flex;
    justify-content: space-between;
-   width: 220px;
-   height: 500px;
+   width: 14.1vw;
+   height:60vh;
    padding: 10px;
-   margin: 0 -600px;
-   top: 50px;
-   left: 795px; 
-    
+   //margin: 0 -600px;
+   top: 10vh;
+   left:12vw; 
 
 }
 
