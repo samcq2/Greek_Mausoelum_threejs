@@ -565,49 +565,49 @@ i7 {
 }
 
 .departures_hourly_volume {
-    height: 400px;
-    width: 500px;
-    transform: translate(-10px, 0px);
+    height: 38vh;
+    width: 30vw;
+    transform: translate(-0.5vw, 0vh);
 }
 
 .hourly_volume {
-    height: 400px;
-    width: 500px;
-    transform: translate(10px, 0px);
+    height: 38vh;
+    width: 30vw;
+    transform: translate(0.5vw, 0vh);
 }
 
 .logscale_hourly_volume {
-    height: 400px;
-    width: 500px;
-    transform: translate(-10px, 0px);
+    height: 38vh;
+    width: 30vw;
+    transform: translate(-0.5vw, 0vh);
 }
 
 .moving_avg_logscale {
-    height: 400px;
-    width: 500px;
-    transform: translate(10px, 0px);
+    height: 38vh;
+    width: 30vw;
+    transform: translate(0.5vw, 0vh);
 }
 
 .rolling_mean_std {
-    height: 400px;
-    width: 500px;
-    transform: translate(-10px, 0px);
+    height: 38vh;
+    width: 30vw;
+    transform: translate(-0.5vw, 0vh);
 }
 
 .log_diff_shift {
-    height: 400px;
-    width: 500px;
-    transform: translate(10px, 0px);
+    height: 38vh;
+    width: 30vw;
+    transform: translate(0.5vw, 0vh);
 }
 
 .exp_dec_Weighted_avg {
-    height: 500px;
-    width: 800px;
+    height: 55vh;
+    width: 45vw;
 }
 
 .resid_seasonality {
-    height: 500px;
-    width: 800px;
+    height: 55vh;
+    width: 45vw;
 }
 
 .threejs_overview {
