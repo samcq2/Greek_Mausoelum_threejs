@@ -6,6 +6,7 @@
     left: 30vw; 
     height: 73vh;
     text-align: center;
+    flex-direction: column;
 
      /* Adjust the height as needed */
     width: 65vw; /* You can adjust the width to fit your design */
@@ -36,13 +37,14 @@
 }
 
 .dropdown_p1 {
+    display: flex;
     position: absolute; // Position it absolutely within its container
-    top: 30px;
-    left: 15px; 
+    top: 3vh;
+    left: 0.6vw; 
     background-color: rgba(51, 108, 206, 0.5); 
-    height: 70px;
-    width: 210px;
-    font-size: 21px;
+    height: 9vh;
+    width: 14vw;
+    font-size: calc(1vw + 1vh);
     font-family: 'Coolvetica';
     color: #f2e7bf;
     border-radius: 10px;
@@ -51,13 +53,14 @@
 }
 
 .dropdown_p2 {
+    display: flex;
     position: absolute;
     background-color: rgba(51, 108, 206, 0.5); 
-    height: 70px;
-    width: 210px;
-    top: 120px;
-    left: 15px;
-    font-size: 21px;
+    height: 9vh;
+    width: 14vw;
+    top: 14vh;
+    left: 0.6vw;
+    font-size: calc(1vw + 1vh);
     font-family: 'Coolvetica';
     color: #f2e7bf;
     border-radius: 10px;
@@ -69,11 +72,11 @@
 .dropdown_p3 {
     position: absolute;
     background-color: rgba(51, 108, 206, 0.5); 
-    height: 70px;
-    width: 210px;
-    top: 300px;
-    left: 15px;
-    font-size: 21px;
+    height: 9vh;
+    width: 14vw;
+    top: 36vh;
+    left: 0.6vw;
+    font-size: calc(1vw + 1vh);
     font-family: 'Coolvetica';
     color: #f2e7bf;
     border-radius: 10px;
@@ -85,11 +88,11 @@
 .dropdown_p4 {
     position: absolute;
     background-color: rgba(51, 108, 206, 0.5); 
-    height: 100px;
-    width: 210px;
-    top: 390px;
-    left: 15px;
-    font-size: 21px;
+    height: 13vh;
+    width: 14vw;
+    top: 47vh;
+    left: 0.6vw;
+    font-size: calc(1vw + 1vh);
     font-family: 'Coolvetica';
     color: #f2e7bf;
     border-radius: 10px;
@@ -101,11 +104,11 @@
 .dropdown_p5 {
     position: absolute;
     background-color: rgba(51, 108, 206, 0.5); 
-    height: 70px;
-    width: 210px;
-    top: 210px;
-    left: 15px;
-    font-size: 21px;
+    height: 9vh;
+    width: 14vw;
+    top: 25vh;
+    left: 0.6vw;
+    font-size: calc(1vw + 1vh);
     font-family: 'Coolvetica';
     color: #f2e7bf;
     border-radius: 10px;
@@ -132,6 +135,7 @@
   }
 
 #project1-title {
+    text-align: center;
     color: #e7bd42;
     padding: 10px;
     font-size: 30px;
