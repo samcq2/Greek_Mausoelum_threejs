@@ -307,13 +307,32 @@ style={{
                   HTML and SCSS. The User Interface (UI) is made of different components including the
                   Sidebar, Layout, Home, Projects and Contact. 
               </div>
+
+              <div id="project2-6">
+                FontAwesome Integration: Imported FontAwesome library to incorporate icons for GitHub, LinkedIn, Home,
+                Projects, and Contacts buttons/links, enhancing the user experience.
+              </div>
+
+
+
               <img src={Home} alt="Band Society" className="Portfolio-Home" />
 
               <div id="project2-2">
                 Technology Stack: JavaScript for coding the components with React, SCSS for styling and HTML for formatting.
               </div>
 
+              <div id="project2-7">
+                Projects Section: The Projects component contains JavaScript files and an SCSS file. These JavaScript files represents
+                different projects, and Navlink is used to render buttons that lead to these projects. Each JS file corresponds
+                to a specific project, and a parameter, activeClassName='active-link' is used to highlight the currently active file.
+              </div>
+
               <img src={Projects} alt="Band Society admin 1" className="Portfolio-Projects" />
+
+              <div id="project2-5">
+                Navigation: Used NavLink to navigate between different pages within the multi-page portfolio website, providing
+                seamless switching between Home, Projects, and Contact sections.
+              </div>
 
               <div id="project2-3">
                 Email Functionality: Integrated "emailjs" library
@@ -334,21 +353,6 @@ style={{
                 lattitude.
               </div>
 
-              <div id="project2-5">
-                Navigation: Used NavLink to navigate between different pages within the multi-page portfolio website, providing
-                seamless switching between Home, Projects, and Contact sections.
-              </div>
-
-              <div id="project2-6">
-                FontAwesome Integration: Imported FontAwesome library to incorporate icons for GitHub, LinkedIn, Home,
-                Projects, and Contacts buttons/links, enhancing the user experience.
-              </div>
-
-              <div id="project2-7">
-                Projects Section: The Projects component contains JavaScript files and an SCSS file. These JavaScript files represents
-                different projects, and Navlink is used to render buttons that lead to these projects. Each JS file corresponds
-                to a specific project, and a parameter, activeClassName='active-link' is used to highlight the currently active file.
-              </div>
           </div>
 
 
