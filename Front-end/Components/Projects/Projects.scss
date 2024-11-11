@@ -525,40 +525,43 @@ i7 {
 }
 
 .Heatmap {
-    height: 500px;
-    width: 550px;
+    height: 45vh;
+    width: 30vw;
 }
 
 .Hist-Pol {
-    height: 500px;
-    width: 500px;
+    height: 45vh;
+    width: 30vw;
     transform: translate(-10px, 0px);
 }
 
 .Hist-Traf {
-    height: 500px;
-    width: 500px;
+    height: 45vh;
+    width: 30vw;
 }
 
 .Loadings-Pol {
-    height: 1000px;
-    width: 1000px;
+    height: 55vh;
+    width: 30vw;
+    transform: translate(-0.5vw, 0px);
 }
 
 .Loadings-Traf {
-    height: 1000px;
-    width: 1000px;
+    height: 55vh;
+    width: 30vw;
 }
 
 .Scree-Plot-Pol {
-    height: 300px;
-    width: 500px;
-    transform: translate(-10px, 0px);
+    height: 30vh;
+    width: 30vw;
+    transform: translate(-0.5vw, -0.5vh);
 }
 
 .Scree-Plot-Traf {
-    height: 300px;
-    width: 500px;
+    height: 30vh;
+    width: 30vw;
+    transform: translate(0vw, -0.5vh);
+
 }
 
 .departures_hourly_volume {
