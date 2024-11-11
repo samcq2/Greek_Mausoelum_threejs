@@ -252,17 +252,15 @@ style={{
               Full-stack booking page developed for Warwick Band Society
             </div>
 
-            <img src={bandsocImage} alt="Band Society" className="bandsoc-frontpage" />
-            
-  
             <div id='project1-1'>
               This is a full-stack app for Warwick Band Society developed as per the requirements
               of the Bandsoc executives for a booking page which allows for automated booking 
               and integrated payment through the Stripe API.
             </div>
 
-            <img src={stripe} alt=" Stripe" className="stripe" />
-
+            <img src={bandsocImage} alt="Band Society" className="bandsoc-frontpage" />
+            
+  
             <div id="project1-2">
               Automated Booking System: Effortlessly book your practice rooms using credits,
                purchasable via Stripe API.
@@ -272,6 +270,8 @@ style={{
               Special Privileges for BOTB Bands: If you're in the Battle of The Bands, 
               enjoy priority booking and extended schedule views through a unique BOTB admin portal.
             </div>
+
+            <img src={stripe} alt=" Stripe" className="stripe" />
 
             <div id="project1-4">
               Backend: 
