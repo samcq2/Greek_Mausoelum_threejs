@@ -24,6 +24,7 @@
     margin: 1vh 13vw;
 
     i {
+        display: flex;
         font-size: 2rem;
         position: absolute; // Position it absolutely within its container
         top: 36.3vh; // Adjust based on where you want it
@@ -32,6 +33,7 @@
       }
     
     i2 {
+        display: flex;
         font-size: 2rem;
         position: absolute; // Position it absolutely within its container
         top: 36.3vh; // Adjust based on where you want it

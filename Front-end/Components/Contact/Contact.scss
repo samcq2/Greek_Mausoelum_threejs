@@ -1,11 +1,13 @@
 .contact {
-    position: absolute; // Position it absolutely within its container
-    top: 50px; // Adjust based on where you want it
-    left: 600px; 
-    height: 670px;
+    position: absolute;
+    display: flex; // Position it absolutely within its container
+    top: 5vh; // Adjust based on where you want it
+    left: 35vw; 
+    height: 82vh;
+    flex-direction: column;
 
      /* Adjust the height as needed */
-    width: 30%; /* You can adjust the width to fit your design */
+    width: 30vw; /* You can adjust the width to fit your design */
     margin: 0 auto; /* Center the container */
     padding: 20px;
     border: 1px solid #ccc; /* Optional: Add a border for visibility */
@@ -16,9 +18,9 @@
   }
   
   .email {
-    font-size: 20px;
-    height: 50px;
-    width: 300px;
+    font-size: calc(1vw + 1vh);
+    height: 7vh;
+    width: 23vw;
     background-color: rgba(51, 108, 206, 0.5);
     font-family: 'Coolvetica';
     color: #e7bd42;
@@ -27,16 +29,16 @@
   }
 
   .email::placeholder {
-    font-size: 20px;
+    font-size: calc(1vw + 1vh);
     color: #e7bd42;
     font-family: 'Coolvetica';
 
   }
 
   .name {
-    font-size: 20px;
-    height: 50px;
-    width: 300px;
+    font-size: calc(1vw + 1vh);
+    height: 7vh;
+    width: 23vw;
     background-color: rgba(51, 108, 206, 0.5);
     font-family: 'Coolvetica';
     color: #e7bd42;
@@ -45,16 +47,16 @@
   }
 
   .name::placeholder {
-    font-size: 20px;
+    font-size: calc(1vw + 1vh);
     color: #e7bd42;
     font-family: 'Coolvetica';
 
   }
 
   .input {
-    font-size: 20px;
-    height: 300px;
-    width: 300px;
+    font-size: calc(1vw + 1vh);
+    height: 30vh;
+    width: 23vw;
     background-color: rgba(51, 108, 206, 0.5) !important;
     font-family: 'Coolvetica';
     color: #e7bd42;
@@ -63,7 +65,7 @@
   }
 
 .input::placeholder {
-    font-size: 20px !important;
+    font-size: calc(1vw + 1vh) !important;
     color: #e7bd42 !important;
     font-family: 'Coolvetica' !important;
 
@@ -88,9 +90,9 @@
   }
 
   .submit {
-    font-size: 20px;
-    height: 50px;
-    width: 300px;
+    font-size: calc(1.5vw + 1.5vh);
+    height: 7vh;
+    width: 15vw;
     background-color: rgba(51, 108, 206, 0.5);
     font-family: 'Coolvetica';
     color: #e7bd42;
@@ -110,7 +112,7 @@
     text-decoration: none; // Remove underline by default
     padding: 10px;
     border-radius: 15px;
-    font-size: 50px;
+    font-size: calc(2vh + 2vw);
     font-family: 'Coolvetica';
   }
 
