@@ -25,6 +25,7 @@
     font-family: 'Coolvetica';
     color: #e7bd42;
     border-radius: 2px;
+    text-align: center;
     border: 2px solid #e7bd42;
   }
 
@@ -32,6 +33,7 @@
     font-size: calc(1vw + 1vh);
     color: #e7bd42;
     font-family: 'Coolvetica';
+    text-align: center;
 
   }
 
@@ -44,12 +46,14 @@
     color: #e7bd42;
     border-radius: 2px;
     border: 2px solid #e7bd42;
+    text-align: center;
   }
 
   .name::placeholder {
     font-size: calc(1vw + 1vh);
     color: #e7bd42;
     font-family: 'Coolvetica';
+    text-align: center;
 
   }
 
@@ -62,12 +66,14 @@
     color: #e7bd42;
     border-radius: 2px;
     border: 2px solid #e7bd42 !important;
+    text-align: center;
   }
 
 .input::placeholder {
     font-size: calc(1vw + 1vh) !important;
     color: #e7bd42 !important;
     font-family: 'Coolvetica' !important;
+    text-align: center;
 
   }
 
