@@ -26,6 +26,8 @@ const Contact = () => {
       const renderer = new THREE.WebGLRenderer();
       renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
+
+      THREE.Cache.enabled = true;
   
       const floorGeometry = new THREE.PlaneGeometry(300, 300);
       const floorTexture = new THREE.TextureLoader().load('../../static/images/greek_mosaic.jpg');
@@ -41,6 +43,8 @@ const Contact = () => {
       const spotlight = new THREE.SpotLight(0xffffff, 3);
       spotlight.position.set(0, 5, 10);
       spotlight.castShadow = true;
+      spotlight.shadow.mapSize.width = 512;
+      spotlight.shadow.mapSize.height = 512;
       scene.add(spotlight);
   
       const controls = new OrbitControls(camera, renderer.domElement);

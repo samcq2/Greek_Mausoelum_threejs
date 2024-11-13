@@ -61,16 +61,6 @@ const Overview = () => {
       scene.add(model);
     });
 
-    // Optimized star setup using InstancedMesh
-    const starGeometry = new THREE.SphereGeometry(0.25, 24, 24);
-    const starMaterial = new THREE.MeshStandardMaterial({
-      color: 0xffffff,
-      emissive: 0xffffff,
-      emissiveIntensity: 2,
-      roughness: 0.1,
-      metalness: 0.5,
-    });
-
     // Animation loop
     function animate() {
       requestAnimationFrame(animate);
@@ -86,15 +76,6 @@ const Overview = () => {
       renderer.render(scene, camera);
     }
     renderer.setAnimationLoop(animate);
-
-    // Performance logging every 5 seconds
-    function logRendererInfo() {
-      console.log('Draw Calls:', renderer.info.render.calls);
-      console.log('Triangles:', renderer.info.render.triangles);
-      console.log('Geometries:', renderer.info.memory.geometries);
-      console.log('Textures:', renderer.info.memory.textures);
-    }
-    setInterval(logRendererInfo, 5000);
 
     // Resize handling
     const handleResize = () => {

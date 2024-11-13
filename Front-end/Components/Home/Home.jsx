@@ -18,12 +18,12 @@ const Home = () => {
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
+    THREE.Cache.enabled = true;
+    
     const floorGeometry = new THREE.PlaneGeometry(300, 300);
-    const loaderText = new THREE.TextureLoader();
-    const floorTexture = loaderText.load("../../static/images/greek_mosaic.jpg");
+    const floorTexture = new THREE.TextureLoader().load('../../static/images/greek_mosaic.jpg');
     floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
     floorTexture.repeat.set(10, 10);
-
     const floorMaterial = new THREE.MeshBasicMaterial({ map: floorTexture, side: THREE.DoubleSide });
     const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
     floorMesh.rotation.x = -Math.PI / 2;
@@ -35,6 +35,8 @@ const Home = () => {
     const spotlight = new THREE.SpotLight(0xffffff, 3);
     spotlight.position.set(0, 5, 10);
     spotlight.castShadow = true;
+    spotlight.shadow.mapSize.width = 512;
+    spotlight.shadow.mapSize.height = 512;
     scene.add(spotlight);
 
     const controls = new OrbitControls(camera, renderer.domElement);
@@ -116,17 +118,19 @@ const Home = () => {
     return () => {
       document.body.removeChild(renderer.domElement);
       scene.traverse((object) => {
-        if (object instanceof THREE.Mesh) {
+        if (object.isMesh) {
           object.geometry.dispose();
-          if (object.material instanceof THREE.MeshStandardMaterial) {
+          if (object.material.isMaterial) {
+            if (object.material.map) object.material.map.dispose();
             object.material.dispose();
           }
         }
       });
       renderer.dispose();
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
-
+  
   return (
     <>
     {showLink && (
