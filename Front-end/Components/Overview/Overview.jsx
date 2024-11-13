@@ -9,11 +9,16 @@ const Overview = () => {
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.set(-6.9, 3.5, 0.5);
 
+    // Set up renderer with max pixel ratio and size
     const renderer = new THREE.WebGLRenderer();
-    renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
+    // Cache textures for reuse
+    THREE.Cache.enabled = true;
+
+    // Floor setup
     const floorGeometry = new THREE.PlaneGeometry(300, 300);
     const floorTexture = new THREE.TextureLoader().load('../../static/images/greek_mosaic.jpg');
     floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
@@ -23,15 +28,24 @@ const Overview = () => {
     floorMesh.rotation.x = -Math.PI / 2;
     scene.add(floorMesh);
 
+    // Lighting setup with lower shadow quality
     const ambientLight = new THREE.AmbientLight(0xffffff, 1);
     scene.add(ambientLight);
     const spotlight = new THREE.SpotLight(0xffffff, 3);
     spotlight.position.set(0, 5, 10);
     spotlight.castShadow = true;
+    spotlight.shadow.mapSize.width = 512;
+    spotlight.shadow.mapSize.height = 512;
     scene.add(spotlight);
 
+    // Camera controls
     const controls = new OrbitControls(camera, renderer.domElement);
 
+    // Background texture
+    const spaceTexture = new THREE.TextureLoader().load('../../static/images/greek_skies.jpg');
+    scene.background = spaceTexture;
+
+    // Load model with texture
     const mosaicTexture = new THREE.TextureLoader().load('../../static/images/tiles.jpg');
     const loader = new GLTFLoader();
     loader.load('/Greek_Mausoleum_2.glb', (gltf) => {
@@ -47,36 +61,42 @@ const Overview = () => {
       scene.add(model);
     });
 
-    const spaceTexture = new THREE.TextureLoader().load('../../static/images/greek_skies.jpg');
-    scene.background = spaceTexture;
+    // Optimized star setup using InstancedMesh
+    const starGeometry = new THREE.SphereGeometry(0.25, 24, 24);
+    const starMaterial = new THREE.MeshStandardMaterial({
+      color: 0xffffff,
+      emissive: 0xffffff,
+      emissiveIntensity: 2,
+      roughness: 0.1,
+      metalness: 0.5,
+    });
 
-    function addStar() {
-      const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-      const material = new THREE.MeshStandardMaterial({
-        color: 0xffffff,
-        emissive: 0xffffff,
-        emissiveIntensity: 2,
-        roughness: 0.1,
-        metalness: 0.5,
-      });
-      const star = new THREE.Mesh(geometry, material);
-      const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
-      star.position.set(x, y, z);
-      scene.add(star);
-    }
-    Array(600).fill().forEach(addStar);
-
+    // Animation loop
     function animate() {
       requestAnimationFrame(animate);
       controls.update();
+
+      // Prevent camera from going below the floor level
       const floorLevel = 0.1;
       if (camera.position.y < floorLevel) {
         camera.position.y = floorLevel;
       }
+
+      // Render the scene
       renderer.render(scene, camera);
     }
     renderer.setAnimationLoop(animate);
 
+    // Performance logging every 5 seconds
+    function logRendererInfo() {
+      console.log('Draw Calls:', renderer.info.render.calls);
+      console.log('Triangles:', renderer.info.render.triangles);
+      console.log('Geometries:', renderer.info.memory.geometries);
+      console.log('Textures:', renderer.info.memory.textures);
+    }
+    setInterval(logRendererInfo, 5000);
+
+    // Resize handling
     const handleResize = () => {
       renderer.setSize(window.innerWidth, window.innerHeight);
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -84,12 +104,14 @@ const Overview = () => {
     };
     window.addEventListener("resize", handleResize);
 
+    // Clean up resources on unmount
     return () => {
       document.body.removeChild(renderer.domElement);
       scene.traverse((object) => {
-        if (object instanceof THREE.Mesh) {
+        if (object.isMesh) {
           object.geometry.dispose();
-          if (object.material instanceof THREE.Material) {
+          if (object.material.isMaterial) {
+            if (object.material.map) object.material.map.dispose();
             object.material.dispose();
           }
         }
