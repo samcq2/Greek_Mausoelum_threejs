@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 
 const Overview = () => {
   useEffect(() => {
@@ -20,7 +21,7 @@ const Overview = () => {
 
     // Floor setup
     const floorGeometry = new THREE.PlaneGeometry(300, 300);
-    const floorTexture = new THREE.TextureLoader().load('../../static/images/greek_mosaic.jpg');
+    const floorTexture = new THREE.TextureLoader().load('/static/images/greek_mosaic.jpg');
     floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
     floorTexture.repeat.set(10, 10);
     const floorMaterial = new THREE.MeshBasicMaterial({ map: floorTexture, side: THREE.DoubleSide });
@@ -42,24 +43,34 @@ const Overview = () => {
     const controls = new OrbitControls(camera, renderer.domElement);
 
     // Background texture
-    const spaceTexture = new THREE.TextureLoader().load('../../static/images/greek_skies.jpg');
+    const spaceTexture = new THREE.TextureLoader().load('/static/images/greek_skies.jpg');
     scene.background = spaceTexture;
 
     // Load model with texture
-    const mosaicTexture = new THREE.TextureLoader().load('../../static/images/tiles.jpg');
+    const mosaicTexture = new THREE.TextureLoader().load('/static/images/tiles.jpg');
     const loader = new GLTFLoader();
-    loader.load('/Greek_Mausoleum_3.glb', (gltf) => {
-      const model = gltf.scene;
-      model.traverse((child) => {
-        if (child.isMesh) {
-          child.material.map = mosaicTexture;
-          child.material.needsUpdate = true;
-        }
-      });
-      model.scale.set(0.05, 0.05, 0.05);
-      model.position.set(0, -0.2, 0);
-      scene.add(model);
-    });
+    const dracoloader = new DRACOLoader();
+    dracoloader.setDecoderPath('/draco/');  // Path to Draco decoder files
+    loader.setDRACOLoader(dracoloader);
+    loader.load(
+      '/static/Greek_Mausoleum_3_compressed.glb',  // Model path from the public folder
+      (gltf) => {
+        const model = gltf.scene;
+        model.traverse((child) => {
+          if (child.isMesh) {
+            child.material.map = mosaicTexture;
+            child.material.needsUpdate = true;
+          }
+        });
+        model.scale.set(0.05, 0.05, 0.05);
+        model.position.set(0, -0.2, 0);
+        scene.add(model);
+      },
+      undefined,
+      (error) => {
+        console.error('An error happened while loading the model:', error);
+      }
+    );
 
     // Animation loop
     function animate() {
