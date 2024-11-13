@@ -15,6 +15,7 @@ const Home = () => {
     camera.position.set(-4, 2, 1);
 
     const renderer = new THREE.WebGLRenderer();
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
@@ -130,7 +131,7 @@ const Home = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  
+
   return (
     <>
     {showLink && (

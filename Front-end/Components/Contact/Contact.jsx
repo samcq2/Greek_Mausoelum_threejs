@@ -24,6 +24,7 @@ const Contact = () => {
       camera.position.set(0, 3, 5);
   
       const renderer = new THREE.WebGLRenderer();
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
 
