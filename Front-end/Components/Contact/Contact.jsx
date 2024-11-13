@@ -47,7 +47,7 @@ const Contact = () => {
   
       const mosaicTexture = new THREE.TextureLoader().load('../../static/images/tiles.jpg');
       const loader = new GLTFLoader();
-      loader.load('/Mausoeum_inside.glb', (gltf) => {
+      loader.load('/Mausoeum_inside_2.glb', (gltf) => {
         const model = gltf.scene;
         model.traverse((child) => {
           if (child.isMesh) {

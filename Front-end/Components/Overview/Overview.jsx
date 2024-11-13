@@ -48,7 +48,7 @@ const Overview = () => {
     // Load model with texture
     const mosaicTexture = new THREE.TextureLoader().load('../../static/images/tiles.jpg');
     const loader = new GLTFLoader();
-    loader.load('/Greek_Mausoleum_2.glb', (gltf) => {
+    loader.load('/Greek_Mausoleum_3.glb', (gltf) => {
       const model = gltf.scene;
       model.traverse((child) => {
         if (child.isMesh) {
