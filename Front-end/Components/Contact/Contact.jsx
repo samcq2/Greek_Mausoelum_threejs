@@ -3,6 +3,7 @@ import "./Contact.scss";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 
 const Contact = () => {
     const [emailForm, setEmailForm] = useState({
@@ -52,7 +53,11 @@ const Contact = () => {
   
       const mosaicTexture = new THREE.TextureLoader().load('../../static/images/tiles.jpg');
       const loader = new GLTFLoader();
-      loader.load('/Mausoeum_inside_2.glb', (gltf) => {
+      const dracoloader = new DRACOLoader();
+      dracoloader.setDecoderPath('/draco/');  // Path to Draco decoder files
+      loader.setDRACOLoader(dracoloader);
+
+      loader.load('static/Mausoleum_inside_compressed.glb', (gltf) => {
         const model = gltf.scene;
         model.traverse((child) => {
           if (child.isMesh) {

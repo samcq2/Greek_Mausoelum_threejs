@@ -4,6 +4,7 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { NavLink } from "react-router-dom";
+import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 
 const Home = () => {
   const [showLink, setShowLink] = useState(false);
@@ -44,7 +45,11 @@ const Home = () => {
     const mosaicTexture = new THREE.TextureLoader().load("../../static/images/tiles.jpg");
 
     const loader = new GLTFLoader();
-    loader.load("/Greek_Mausoleum_3.glb", function (gltf) {
+    const dracoloader = new DRACOLoader();
+    dracoloader.setDecoderPath('/draco/');  // Path to Draco decoder files
+    loader.setDRACOLoader(dracoloader);
+
+    loader.load("/static/Greek_Mausoleum_3_compressed.glb", function (gltf) {
       const model = gltf.scene;
       model.traverse((child) => {
         if (child.isMesh) {
