@@ -33,6 +33,11 @@ const Contact = () => {
       render(); // Render the scene
       delta = delta % interval;
     }
+
+    const floorLevel = 0.6;
+    if (camera.position.y < floorLevel) {
+        camera.position.y = floorLevel;
+    }
   };
 
   // The render function

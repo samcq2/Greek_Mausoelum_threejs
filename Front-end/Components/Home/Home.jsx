@@ -24,6 +24,11 @@ const Home = () => {
       render(); // Render the scene
       delta = delta % interval;
     }
+
+    const floorLevel = 0.4;
+    if (camera.position.y < floorLevel) {
+        camera.position.y = floorLevel;
+    }
   };
 
   // The render function
