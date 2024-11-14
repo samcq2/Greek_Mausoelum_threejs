@@ -7,8 +7,9 @@ import { NavLink } from "react-router-dom";
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 
 const Home = () => {
+
   const [showLink, setShowLink] = useState(false);
-    
+
   useEffect(() => {
     // Scene setup
     const scene = new THREE.Scene();
@@ -16,16 +17,15 @@ const Home = () => {
     camera.position.set(-4, 2, 1);
 
     const renderer = new THREE.WebGLRenderer();
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
-    THREE.Cache.enabled = true;
-    
     const floorGeometry = new THREE.PlaneGeometry(300, 300);
-    const floorTexture = new THREE.TextureLoader().load('../../static/images/greek_mosaic.jpg');
+    const loaderText = new THREE.TextureLoader();
+    const floorTexture = loaderText.load("../../static/images/greek_mosaic.jpg");
     floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
     floorTexture.repeat.set(10, 10);
+
     const floorMaterial = new THREE.MeshBasicMaterial({ map: floorTexture, side: THREE.DoubleSide });
     const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
     floorMesh.rotation.x = -Math.PI / 2;
@@ -37,19 +37,14 @@ const Home = () => {
     const spotlight = new THREE.SpotLight(0xffffff, 3);
     spotlight.position.set(0, 5, 10);
     spotlight.castShadow = true;
-    spotlight.shadow.mapSize.width = 512;
-    spotlight.shadow.mapSize.height = 512;
     scene.add(spotlight);
 
     const controls = new OrbitControls(camera, renderer.domElement);
     const mosaicTexture = new THREE.TextureLoader().load("../../static/images/tiles.jpg");
 
     const loader = new GLTFLoader();
-    const dracoloader = new DRACOLoader();
-    dracoloader.setDecoderPath('/draco/');  // Path to Draco decoder files
-    loader.setDRACOLoader(dracoloader);
 
-    loader.load("/static/Greek_Mausoleum_3_compressed.glb", function (gltf) {
+    loader.load("/Greek_Mausoleum_3.glb", function (gltf) {
       const model = gltf.scene;
       model.traverse((child) => {
         if (child.isMesh) {
@@ -68,40 +63,56 @@ const Home = () => {
 
       camera.lookAt(model.position);
 
-  
+
       const zoomDuration = 2000; // Duration in milliseconds
-  
+
       const startTime = performance.now();
 
-  
+
       function animateZoom() {
-    
+
         const elapsed = performance.now() - startTime;
-    
+
         const progress = Math.min(elapsed / zoomDuration, 1);
         camera.position.lerpVectors(startPosition, targetPosition, progress);
 
-    
+
         camera.lookAt(model.position); // Keep looking at the model's position
 
-    
+
         if (progress < 1) {
-      
+
             requestAnimationFrame(animateZoom);
-    
+
         }
         else {
             setShowLink(true);
           }
-  
+
     }
 
-  
+
     animateZoom();
 });
 
     const spaceTexture = new THREE.TextureLoader().load("../../static/images/greek_skies.jpg");
     scene.background = spaceTexture;
+
+    function addStar() {
+      const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+      const material = new THREE.MeshStandardMaterial({
+        color: 0xffffff,
+        emissive: 0xffffff,
+        emissiveIntensity: 2,
+        roughness: 0.1,
+        metalness: 0.5,
+      });
+      const star = new THREE.Mesh(geometry, material);
+      const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
+      star.position.set(x, y, z);
+      scene.add(star);
+    }
+    Array(600).fill().forEach(addStar);
 
     function animate() {
       requestAnimationFrame(animate);
@@ -124,16 +135,14 @@ const Home = () => {
     return () => {
       document.body.removeChild(renderer.domElement);
       scene.traverse((object) => {
-        if (object.isMesh) {
+        if (object instanceof THREE.Mesh) {
           object.geometry.dispose();
-          if (object.material.isMaterial) {
-            if (object.material.map) object.material.map.dispose();
+          if (object.material instanceof THREE.MeshStandardMaterial) {
             object.material.dispose();
           }
         }
       });
       renderer.dispose();
-      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -148,7 +157,7 @@ const Home = () => {
             </NavLink>
           </nav>
         </div>
-        
+
         <div className="tech-container">
           <nav>
             <NavLink exact to="/projects" className="tech-link">
@@ -167,9 +176,9 @@ const Home = () => {
       </div>
     )}
   </>
-    
 
-    
+
+
   );
 };
 
