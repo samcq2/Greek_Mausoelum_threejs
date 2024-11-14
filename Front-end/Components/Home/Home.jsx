@@ -43,8 +43,11 @@ const Home = () => {
     const mosaicTexture = new THREE.TextureLoader().load("../../static/images/tiles.jpg");
 
     const loader = new GLTFLoader();
+    const dracoloader = new DRACOLoader();
+    dracoloader.setDecoderPath('/draco/');  // Path to Draco decoder files
+    loader.setDRACOLoader(dracoloader);
 
-    loader.load("/Greek_Mausoleum_3.glb", function (gltf) {
+    loader.load("/static/Greek_Mausoleum_3_compressed.glb", function (gltf) {
       const model = gltf.scene;
       model.traverse((child) => {
         if (child.isMesh) {
