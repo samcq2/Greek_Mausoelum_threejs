@@ -22,24 +22,6 @@
     width: 23vw;
     padding: 10px;
     margin: 1vh 13vw;
-
-    i {
-        display: flex;
-        font-size: 2rem;
-        position: absolute; // Position it absolutely within its container
-        top: 36.3vh; // Adjust based on where you want it
-        right: 27.2vw;
-    
-      }
-    
-    i2 {
-        display: flex;
-        font-size: 2rem;
-        position: absolute; // Position it absolutely within its container
-        top: 36.3vh; // Adjust based on where you want it
-        right: 14.7vw;
-    
-      }
 }
 
 
@@ -235,6 +217,7 @@
 }
 
 i {
+    display: flex;
     font-size: 2rem;
     position: absolute; // Position it absolutely within its container
     top: 36.3vh; // Adjust based on where you want it
@@ -243,6 +226,7 @@ i {
   }
 
 i2 {
+    display: flex;
     font-size: 2rem;
     position: absolute; // Position it absolutely within its container
     top: 36.3vh; // Adjust based on where you want it
