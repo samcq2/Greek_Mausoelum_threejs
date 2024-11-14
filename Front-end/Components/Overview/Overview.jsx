@@ -73,7 +73,7 @@ const Overview = () => {
     dracoloader.setDecoderPath("/draco/"); // Set path for Draco decoder
     loader.setDRACOLoader(dracoloader);
     loader.load(
-      "/static/Greek_Mausoleum_3_compressed.glb",  // Path to your 3D model
+      "/static/Greek_Mausoleum_compressed.glb",  // Path to your 3D model
       (gltf) => {
         const model = gltf.scene;
         model.traverse((child) => {
