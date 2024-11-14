@@ -7,16 +7,39 @@ import { NavLink } from "react-router-dom";
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 
 const Home = () => {
-
   const [showLink, setShowLink] = useState(false);
+  const clock = new THREE.Clock();
+  let delta = 0;
+  const interval = 1 / 60; // 60fps
+
+  let scene, camera, renderer, orbital_controls;
+
+  // The animate function
+  const animate = () => {
+    requestAnimationFrame(animate);
+    if (orbital_controls) orbital_controls.update(); // Update the controls for damping
+    delta += clock.getDelta();
+
+    if (delta > interval) {
+      render(); // Render the scene
+      delta = delta % interval;
+    }
+  };
+
+  // The render function
+  const render = () => {
+    if (renderer && scene && camera) {
+      renderer.render(scene, camera);
+    }
+  };
 
   useEffect(() => {
     // Scene setup
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     camera.position.set(-4, 2, 1);
 
-    const renderer = new THREE.WebGLRenderer();
+    renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
 
@@ -40,6 +63,8 @@ const Home = () => {
     scene.add(spotlight);
 
     const controls = new OrbitControls(camera, renderer.domElement);
+    orbital_controls = controls;
+
     const mosaicTexture = new THREE.TextureLoader().load("../../static/images/tiles.jpg");
 
     const loader = new GLTFLoader();
@@ -66,67 +91,29 @@ const Home = () => {
 
       camera.lookAt(model.position);
 
-
       const zoomDuration = 2000; // Duration in milliseconds
-
       const startTime = performance.now();
 
-
       function animateZoom() {
-
         const elapsed = performance.now() - startTime;
-
         const progress = Math.min(elapsed / zoomDuration, 1);
         camera.position.lerpVectors(startPosition, targetPosition, progress);
-
-
         camera.lookAt(model.position); // Keep looking at the model's position
 
-
         if (progress < 1) {
-
-            requestAnimationFrame(animateZoom);
-
+          requestAnimationFrame(animateZoom);
+        } else {
+          setShowLink(true);
         }
-        else {
-            setShowLink(true);
-          }
+      }
 
-    }
-
-
-    animateZoom();
-});
+      animateZoom();
+    });
 
     const spaceTexture = new THREE.TextureLoader().load("../../static/images/greek_skies.jpg");
     scene.background = spaceTexture;
 
-    function addStar() {
-      const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-      const material = new THREE.MeshStandardMaterial({
-        color: 0xffffff,
-        emissive: 0xffffff,
-        emissiveIntensity: 2,
-        roughness: 0.1,
-        metalness: 0.5,
-      });
-      const star = new THREE.Mesh(geometry, material);
-      const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
-      star.position.set(x, y, z);
-      scene.add(star);
-    }
-    Array(600).fill().forEach(addStar);
-
-    function animate() {
-      requestAnimationFrame(animate);
-      controls.update();
-      const floorLevel = 0.1;
-      if (camera.position.y < floorLevel) {
-        camera.position.y = floorLevel;
-      }
-      renderer.render(scene, camera);
-    }
-    renderer.setAnimationLoop(animate);
+    animate();
 
     window.addEventListener("resize", () => {
       camera.aspect = window.innerWidth / window.innerHeight;
@@ -147,41 +134,38 @@ const Home = () => {
       });
       renderer.dispose();
     };
-  }, []);
+  }, []); // Empty dependency array to run this effect once on mount
 
   return (
     <>
-    {showLink && (
-      <div>
-        <div className="About-container">
-          <nav>
-            <NavLink exact to="/about" className="about-link">
-              About me
-            </NavLink>
-          </nav>
+      {showLink && (
+        <div>
+          <div className="About-container">
+            <nav>
+              <NavLink exact to="/about" className="about-link">
+                About me
+              </NavLink>
+            </nav>
+          </div>
+
+          <div className="tech-container">
+            <nav>
+              <NavLink exact to="/projects" className="tech-link">
+                Technical Projects
+              </NavLink>
+            </nav>
+          </div>
+
+          <div className="contact-container">
+            <nav>
+              <NavLink exact to="/contact" className="contact-link">
+                Contact me
+              </NavLink>
+            </nav>
+          </div>  
         </div>
-
-        <div className="tech-container">
-          <nav>
-            <NavLink exact to="/projects" className="tech-link">
-              Technical Projects
-            </NavLink>
-          </nav>
-        </div>
-
-        <div className="contact-container">
-          <nav>
-            <NavLink exact to="/contact" className="contact-link">
-              Contact me
-            </NavLink>
-          </nav>
-        </div>  
-      </div>
-    )}
-  </>
-
-
-
+      )}
+    </>
   );
 };
 

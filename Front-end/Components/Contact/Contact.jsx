@@ -19,12 +19,37 @@ const Contact = () => {
 
     const [status, setStatus] = useState('Submit');
 
+  const clock = new THREE.Clock();
+  let delta = 0;
+  const interval = 1 / 60; // 60fps
+
+  // The animate function
+  const animate = () => {
+    requestAnimationFrame(animate);
+    if (orbital_controls) orbital_controls.update(); // Update the controls for damping
+    delta += clock.getDelta();
+
+    if (delta > interval) {
+      render(); // Render the scene
+      delta = delta % interval;
+    }
+  };
+
+  // The render function
+  const render = () => {
+    if (renderer && scene && camera) {
+      renderer.render(scene, camera);
+    }
+  };
+
+  let scene, camera, renderer, orbital_controls;
+
     useEffect(() => {
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
       camera.position.set(0, 3, 5);
   
-      const renderer = new THREE.WebGLRenderer();
+      renderer = new THREE.WebGLRenderer();
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
@@ -73,16 +98,7 @@ const Contact = () => {
       const spaceTexture = new THREE.TextureLoader().load('../../static/images/greek_skies.jpg');
       scene.background = spaceTexture;
   
-      function animate() {
-        requestAnimationFrame(animate);
-        controls.update();
-        const floorLevel = 0.1;
-        if (camera.position.y < floorLevel) {
-          camera.position.y = floorLevel;
-        }
-        renderer.render(scene, camera);
-      }
-      renderer.setAnimationLoop(animate);
+      animate();
   
       const handleResize = () => {
         camera.aspect = window.innerWidth / window.innerHeight;
