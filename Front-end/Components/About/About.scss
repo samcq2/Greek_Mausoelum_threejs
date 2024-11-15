@@ -478,12 +478,12 @@ i2 {
     .desc-container {
         position: absolute; // Position it absolutely within its container
         display: flex;
-        top: 15vh; // Adjust based on where you want it
+        top: 8vh; // Adjust based on where you want it
         left: 23vw; 
         text-align: center;
         flex-direction: column;
         max-height: 70vh; /* Adjust the height as needed */
-        width: 50vw; /* You can adjust the width to fit your design */
+        width: 60vw; /* You can adjust the width to fit your design */
         margin: 0 auto; /* Center the container */
         padding: 20px;
         border: 1px solid #ccc; /* Optional: Add a border for visibility */
@@ -559,7 +559,7 @@ i2 {
     #education-title {
         color: #e7bd42;
         padding: 10px;
-        font-size: 30px;
+        font-size: calc(1.5vw + 1.5vh);
         text-decoration: underline;
         font-family: 'Coolvetica';
     }
@@ -567,70 +567,70 @@ i2 {
     #education1 {
         color: #f2e7bf;
         padding: 15px;
-        font-size: 20px;
+        font-size: calc(1.2vh + 1.2vw);
         font-family: 'Coolvetica';
     }
     
     #education2 {
         color: #f2e7bf;
         padding: 15px;
-        font-size: 20px;
+        font-size: calc(1.2vh + 1.2vw);
         font-family: 'Coolvetica';
     }
     
     #education3 {
         color: #f2e7bf;
         padding: 15px;
-        font-size: 20px;
+        font-size: calc(1.2vh + 1.2vw);
         font-family: 'Coolvetica';
     }
     
     #education4 {
         color: #f2e7bf;
         padding: 15px;
-        font-size: 20px;
+        font-size: calc(1.2vh + 1.2vw);
         font-family: 'Coolvetica';
     }
     
     #education5 {
         color: #f2e7bf;
         padding: 15px;
-        font-size: 20px;
+        font-size: calc(1.2vh + 1.2vw);
         font-family: 'Coolvetica';
     }
     
     #education6 {
         color: #f2e7bf;
         padding: 15px;
-        font-size: 20px;
+        font-size: calc(1.2vh + 1.2vw);
         font-family: 'Coolvetica';
     }
     
     #education8 {
         color: #f2e7bf;
         padding: 15px;
-        font-size: 20px;
+        font-size: calc(1.2vh + 1.2vw);
         font-family: 'Coolvetica';
     }
     
     #education7 {
         color: #f2e7bf;
         padding: 15px;
-        font-size: 20px;
+        font-size: calc(1.2vh + 1.2vw);
         font-family: 'Coolvetica';
     }
     
     #employment1 {
         color: #f2e7bf;
         padding: 15px;
-        font-size: 20px;
+        font-size: calc(1.2vh + 1.2vw);
         font-family: 'Coolvetica';
     }
     
     #employment-title {
         padding: 10px;
         color: #e7bd42;
-        font-size: 30px;
+        font-size: calc(1.5vw + 1.5vh);
         text-decoration: underline;
         font-family: 'Coolvetica';
     
