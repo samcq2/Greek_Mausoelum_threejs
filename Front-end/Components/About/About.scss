@@ -24,6 +24,15 @@
     margin: 1vh 13vw;
 }
 
+.button2-container {
+    position: relative; /* Add relative positioning */
+    display: flex;
+    justify-content: space-between;
+    width: 23vw;
+    padding: 10px;
+    margin: 1vh 13vw;
+}
+
 
 .divider{
     width:15px;
@@ -216,20 +225,20 @@
     font-size: 2rem;
 }
 
-i {
-    display: flex;
+ i {
+    position: absolute; /* Absolute position within button2-container */
     font-size: 2rem;
-    position: absolute; // Position it absolutely within its container
-    top: 36.3vh; // Adjust based on where you want it
-    right: 27.2vw;
+    top: 83.5%; /* Adjust top to center it vertically inside button2-container */
+    right: 51.7%; /* Adjust right to stay inside the container */
+    transform: translateY(-50%);
 
   }
 
-i2 {
-    display: flex;
+ i2 {
+    position: absolute; /* Absolute position within button2-container */
     font-size: 2rem;
-    position: absolute; // Position it absolutely within its container
-    top: 36.3vh; // Adjust based on where you want it
-    right: 14.7vw;
+    top: 82.5%; /* Adjust top to center it vertically inside button2-container */
+    right: 27.8%; /* Adjust right to stay inside the container */
+    transform: translateY(-50%);
 
   }
