@@ -234,3 +234,486 @@ i2 {
     right: 0.7vw;
 
   }
+
+@media (min-width: 930px) {
+    .desc-container {
+        position: absolute; // Position it absolutely within its container
+        display: flex;
+        top: 15vh; // Adjust based on where you want it
+        left: 23vw; 
+        text-align: center;
+        flex-direction: column;
+        max-height: 75vh; /* Adjust the height as needed */
+        width: 50vw; /* You can adjust the width to fit your design */
+        margin: 0 auto; /* Center the container */
+        padding: 20px;
+        border: 1px solid #ccc; /* Optional: Add a border for visibility */
+        background-color: rgba(51, 108, 206, 0.5); /* Optional: Add a background color */
+        overflow-y: auto; /* Enables vertical scrolling */
+        overflow-x: hidden;
+        text-align: center;
+      }
+    
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 23vw;
+        padding: 10px;
+        margin: 1vh 13vw;
+    }
+    
+    
+    .divider{
+        width:15px;
+        height:auto;
+        display:inline-block;
+    }
+    .dropdown1, .dropdown2 { /* Apply similar styles for consistency */
+        background-color: rgba(51, 108, 206, 0.5); 
+        height: 7vh; /* Same height for both buttons */
+        width: 30vw; /* Set a consistent width unit for both dropdowns */
+        font-size: calc(1vh + 1vw);
+        font-family: 'Coolvetica';
+        color: #f2e7bf;
+        border-radius: 10px;
+        border: 2px solid #e7bd42;
+        text-decoration: underline;
+    }
+    
+    .button-container .dropdown1:hover {
+        background-color: #e7bd42;
+        color: #336cce;
+      }
+      
+    #name  {
+        text-align: center;
+        display: inline-block; // Allow padding and margin
+        color: #e7bd42; // Text color
+        text-decoration: none; // Remove underline by default
+        padding: 2vw 5vw;
+        border-radius: 15px;
+        font-size: calc(2vw + 2vh);
+        font-family: 'Coolvetica';
+        
+      }
+    
+    #welcome {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education-and-employment-intro {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education-title {
+        color: #e7bd42;
+        padding: 10px;
+        font-size: 30px;
+        text-decoration: underline;
+        font-family: 'Coolvetica';
+    }
+    
+    #education1 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education2 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education3 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education4 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education5 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education6 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education8 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education7 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #employment1 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #employment-title {
+        padding: 10px;
+        color: #e7bd42;
+        font-size: 30px;
+        text-decoration: underline;
+        font-family: 'Coolvetica';
+    
+    }
+    
+    #employment2 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment3 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment4 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment5 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment6 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment7 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment8 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment9 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+      
+    .arrow {
+        transform: rotate(270deg);
+        transition: 0.2s ease;
+    }
+    
+    .arrow2 {
+        font-size: 2rem;
+        transform: rotate(270deg);
+        transition: 0.2s ease;
+        font-size: 2rem;
+    }
+    .active #arrow2 {
+        font-size: 2rem;
+    }
+    
+    i {
+        display: flex;
+        font-size: calc(1.5vw + 1vh);
+        position: absolute; // Position it absolutely within its container
+        top: 3vh; // Adjust based on where you want it
+        right: 13vw;
+    
+      }
+    
+    i2 {
+        display: flex;
+        font-size: calc(1.5vw + 1vh);
+        position: absolute; // Position it absolutely within its container
+        top: 3vh; // Adjust based on where you want it
+        right: 0.7vw;
+    
+      }
+}
+
+@media (max-height: 480px) {
+    .desc-container {
+        position: absolute; // Position it absolutely within its container
+        display: flex;
+        top: 15vh; // Adjust based on where you want it
+        left: 23vw; 
+        text-align: center;
+        flex-direction: column;
+        max-height: 60vh; /* Adjust the height as needed */
+        width: 50vw; /* You can adjust the width to fit your design */
+        margin: 0 auto; /* Center the container */
+        padding: 20px;
+        border: 1px solid #ccc; /* Optional: Add a border for visibility */
+        background-color: rgba(51, 108, 206, 0.5); /* Optional: Add a background color */
+        overflow-y: auto; /* Enables vertical scrolling */
+        overflow-x: hidden;
+        text-align: center;
+      }
+    
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 33vw;
+        padding: 10px;
+        margin: 1vh 6vw;
+    }
+    
+    
+    .divider{
+        width:15px;
+        height:auto;
+        display:inline-block;
+    }
+    .dropdown1, .dropdown2 { /* Apply similar styles for consistency */
+        background-color: rgba(51, 108, 206, 0.5); 
+        height: 7vh; /* Same height for both buttons */
+        width: 30vw; /* Set a consistent width unit for both dropdowns */
+        font-size: calc(1.3vh + 1.3vw);
+        font-family: 'Coolvetica';
+        color: #f2e7bf;
+        
+        border-radius: calc(0.3vw + 0.3vw);
+        border: calc(0.1vw + 0.1vh) solid #e7bd42;
+        text-decoration: underline;
+    }
+
+    .dropdown2 {
+        margin-left: 1vw; /* Optional if you want a bit of space on the left of the second button */
+    }
+    
+    .button-container .dropdown1:hover {
+        background-color: #e7bd42;
+        color: #336cce;
+      }
+      
+    #name  {
+        text-align: center;
+        display: inline-block; // Allow padding and margin
+        color: #e7bd42; // Text color
+        text-decoration: none; // Remove underline by default
+        padding: -1vw 3vw;
+        border-radius: 15px;
+        font-size: calc(1.5vw + 1.5vh);
+        font-family: 'Coolvetica';
+        
+      }
+    
+    #welcome {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: calc(1.2vh + 1.2vw);
+        font-family: 'Coolvetica';
+    }
+    
+    #education-and-employment-intro {
+        color: #f2e7bf;
+        padding: -1vw 3vw;
+        font-size: calc(1.2vh + 1.2vw);
+        font-family: 'Coolvetica';
+    }
+    
+    #education-title {
+        color: #e7bd42;
+        padding: 10px;
+        font-size: 30px;
+        text-decoration: underline;
+        font-family: 'Coolvetica';
+    }
+    
+    #education1 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education2 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education3 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education4 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education5 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education6 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education8 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #education7 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #employment1 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Coolvetica';
+    }
+    
+    #employment-title {
+        padding: 10px;
+        color: #e7bd42;
+        font-size: 30px;
+        text-decoration: underline;
+        font-family: 'Coolvetica';
+    
+    }
+    
+    #employment2 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment3 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment4 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment5 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment6 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment7 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment8 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    #employment9 {
+        color: #f2e7bf;
+        padding: 15px;
+        font-size: 20px;
+    }
+      
+    .arrow {
+        transform: rotate(270deg);
+        transition: 0.2s ease;
+    }
+    
+    .arrow2 {
+        
+        transform: rotate(270deg);
+        transition: 0.2s ease;
+        
+    }
+    
+    
+    i {
+        display: flex;
+        font-size: calc(1.5vw + 1vh);
+        position: absolute; // Position it absolutely within its container
+        top: 5.5vh; // Adjust based on where you want it
+        right: 20.5vw;
+        font-size: calc(1.8vw + 1.8vh);
+    
+      }
+    
+    i2 {
+        display: flex;
+        font-size: calc(1.5vw + 1vh);
+        position: absolute; // Position it absolutely within its container
+        top: 5.5vh; // Adjust based on where you want it
+        right: 2.1vw;
+        font-size: calc(1.8vw + 1.8vh)
+    
+      }
+}
