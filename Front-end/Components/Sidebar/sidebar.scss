@@ -343,3 +343,175 @@
 
 }
 
+@media (max-height: 400px) {
+  .nav-bar {
+    background:#336cce;
+    width: 8vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    min-height: 500px;
+    opacity: 0.7;
+    
+  
+    .logo {
+      display: block;
+      display: flex;
+      padding: 8px 0;
+  
+      img {
+        display: flex;
+        margin: 5vh auto;
+        position: absolute;
+  
+       &.sub-logo {
+        display: flex;
+        position: absolute;
+        height: 6vh;
+        width: 4vw;
+        transform: translate(2vw, -4vh)
+          
+        }
+  
+        &.sub-logo2 {
+          display: flex;
+          position: absolute;
+          height: 6vh;
+          width: 4vw;
+          
+          transform: translate(2vw, 6vh);
+  
+        }
+  
+        &.sub-logo3 {
+          display: flex;
+          position: absolute;
+          height: 6vh;
+          width: 4vw;
+          transform: translate(2vw, 16vh);
+        }
+      }
+    }
+  
+    nav {
+      display: block;
+      text-align: center;
+      position:absolute;
+      height: 3vh;
+      top: 75vh;
+      margin-top: -120px;
+      width: 100%;
+  
+      a {
+        display: flex;
+        font-size: calc(1.5vw + 1.5vh);
+        color: #f2e7bf;
+        display: block;
+        line-height: 1vh;
+        height: 8vh;
+        position: relative;
+        text-decoration: none;
+  
+        i {
+          transition: all 0.3s ease-out;
+        }
+  
+        &:hover {
+          color: #e7bd42;
+  
+          svg {
+            opacity: 0;
+          }
+  
+          &:after {
+            opacity: 1;
+          }
+        }
+  
+        &:after {
+          content: '';
+          font-size: calc(0.5vw + 1vh);
+          letter-spacing: 1px;
+          position: 1px;
+          bottom: 0;
+          display: block;
+          width: 100%;
+          text-align: center;
+          opacity: 0;
+          -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+        }
+  
+        
+      }
+  
+      a.overview-link {
+        &:after {
+            content: 'OVERVIEW';
+        }
+      }
+  
+      a.home-link {
+        &:after {
+            content: 'HOME';
+        }
+      }
+  
+      a.about-link {
+        &:after {
+            content: 'ABOUT ME';
+        }
+      }
+  
+      a.projects-link {
+        &:after {
+          content: 'PROJECTS';
+        }
+      }
+  
+      a.contact-link {
+        &:after {
+          content: 'CONTACT';
+        }
+      }
+      a.active {
+        svg {
+            color: #e7bd42;
+        }
+      }
+  
+      
+    }
+  
+    ul {
+      position: absolute;
+      bottom: 75vh;
+      width: 100%;
+      display: block;
+      padding: 0;
+      list-style: none;
+      text-align: center;
+      margin: 0;
+  
+      li {
+        a {
+          display: flex;
+          padding: 0vh 0;
+          display: block;
+          font-size: 5vh;
+          line-height: 8vh;
+  
+          &:hover svg {
+            color: #e7bd42;
+          }
+  
+        
+        }
+      }
+    }
+  }
+
+}
