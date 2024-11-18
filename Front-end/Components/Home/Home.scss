@@ -112,3 +112,120 @@ body {
   border: none;
     /* Removes the border */
 }
+
+@media (max-height: 400px) {
+
+.About-container {
+  position: absolute;
+  top: 10vh;  // 10% of viewport height
+  left: 50%;  // Centers the container horizontally
+  transform: translate(-7vw, 0vh );  // Ensures perfect horizontal centering
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.7vw;  // Font size will be 6% of the viewport width
+  border: 2px solid #f2e7bf;
+  border-radius: 20px;
+  z-index: 10;
+  background-color: transparent;
+  border-radius: 5px;
+
+  .about-link {
+    display: inline-block;
+    color: #f2e7bf;
+    text-decoration: none;
+    padding: 1vw;  // Padding based on viewport width
+    border-radius: 13px;
+    background-color: rgba(51, 108, 206, 0.5);
+    border: 2px solid #f2e7bf;
+    font-family: 'Coolvetica';
+    
+  }
+
+  .about-link:hover {
+    color: #e7bd42;
+    border: 2px solid #e7bd42;
+    font-family: 'Coolvetica';
+  }
+}
+
+.tech-container {
+  position: absolute;
+  top: 30vh;  // 30% of viewport height
+  left: 50%;  // Centers the container horizontally
+  transform: translate(-12vw, 7vh );  // Ensures perfect horizontal centering
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.7vw;  // Font size will be 6% of the viewport width
+  border: 2px solid;
+  border-radius: 20px;
+  z-index: 10;
+  background-color: transparent;
+  border-radius: 5px;
+
+  .tech-link {
+    display: inline-block;
+    color: #f2e7bf;
+    text-decoration: none;
+    padding: 1vw;  // Padding based on viewport width
+    border-radius: 15px;
+    background-color: rgba(51, 108, 206, 0.5);
+    border: 2px solid #f2e7bf;
+    font-family: 'Coolvetica';
+  }
+
+  .tech-link:hover {
+    color: #e7bd42;
+    border: 2px solid #e7bd42;
+    font-family: 'Coolvetica';
+  }
+}
+
+.contact-container {
+  position: absolute;
+  top: 50vh;  // 50% of viewport height
+  left: 50%;  // Centers the container horizontally
+  transform: translate(-7.5vw, 14vh );  // Ensures perfect horizontal centering
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.7vw;  // Font size will be 6% of the viewport width
+  border: 2px solid;
+  border-radius: 20px;
+  z-index: 10;
+  background-color: transparent;
+  border-radius: 5px;
+
+  .contact-link {
+    display: inline-block;
+    color: #f2e7bf;
+    text-decoration: none;
+    padding: 1vw;  // Padding based on viewport width
+    border-radius: 15px;
+    background-color: rgba(51, 108, 206, 0.5);
+    border: 2px solid #f2e7bf;
+    font-family: 'Coolvetica';
+  }
+
+  .contact-link:hover {
+    color: #e7bd42;
+    border: 2px solid #e7bd42;
+    font-family: 'Coolvetica';
+  }
+}
+
+// Automatically adjusts size based on the viewport
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;  // Optional: prevents scrollbars from appearing if content overflows
+}
+
+.About-container,
+.tech-container,
+.contact-container {
+  border: none;
+    /* Removes the border */
+}
+}
