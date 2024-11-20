@@ -70,6 +70,7 @@
 }
 
 .dropdown_p3 {
+    display: flex;
     position: absolute;
     background-color: rgba(51, 108, 206, 0.5); 
     height: 9vh;
@@ -86,6 +87,7 @@
 }
 
 .dropdown_p4 {
+    display: flex;
     position: absolute;
     background-color: rgba(51, 108, 206, 0.5); 
     height: 13vh;
@@ -102,6 +104,7 @@
 }
 
 .dropdown_p5 {
+    display: flex;
     position: absolute;
     background-color: rgba(51, 108, 206, 0.5); 
     height: 9vh;
@@ -486,151 +489,152 @@ i7 {
 }
 
 .bandsoc-frontpage {
+    display: flex;
     width: 60vw;
     height: 65vh;
     transform: translate(0vw, 0vh);
 }
 
 .bandsoc-admin-1 {
+    display: flex;
     width: 60vw;
     height: 65vh;
     transform: translate(0vw, 1vh);
 }
 
 .bandsoc-admin-2 {
+    display: flex;
     width: 60vw;
     height: 65vh;
     transform: translate(0vw, 0vh);
 }
 
 .stripe {
+    display: flex;
+    display: inline-block;
     height:50vh;
     width:35vw;
     transform: translate(0vw, 0vh);
 }
 
 .Portfolio-Home {
+    display: flex;
+    display: inline-block;
     width: 55vw;
     height: 60vh;
 }
 
 .Portfolio-Projects {
+    display: flex;
+    display: inline-block;
     width: 55vw;
     height: 60vh;
 }
 
 .Portfolio-Contact {
+    display: flex;
+    display: inline-block;
     width: 55vw;
     height: 60vh;
 }
 
 .Heatmap {
+    display: flex;
+    display: inline-block;
     height: 45vh;
     width: 30vw;
 }
 
-.Hist-Pol {
-    height: 45vh;
-    width: 30vw;
-    transform: translate(-10px, 0px);
-}
-
-.Hist-Traf {
+.Hist-Traf, .Hist-Pol {
+    display: flex;
+    display: inline-block;
     height: 45vh;
     width: 30vw;
 }
 
-.Loadings-Pol {
-    height: 55vh;
-    width: 30vw;
-    transform: translate(-0.5vw, 0px);
-}
-
-.Loadings-Traf {
+.Loadings-Traf, .Loadings-Pol {
+    display: flex;
+    display: inline-block;
     height: 55vh;
     width: 30vw;
 }
 
-.Scree-Plot-Pol {
+.Scree-Plot-Traf, .Scree-Plot-Pol {
+    display: flex;
+    display: inline-block;
     height: 30vh;
     width: 30vw;
-    transform: translate(-0.5vw, -0.5vh);
-}
-
-.Scree-Plot-Traf {
-    height: 30vh;
-    width: 30vw;
-    transform: translate(0vw, -0.5vh);
+    transform: translate(0vw, -1vh);
 
 }
 
-.departures_hourly_volume {
+.hourly_volume, .departures_hourly_volume {
+    display: flex;
+    display: inline-block;
     height: 38vh;
     width: 30vw;
-    transform: translate(-0.5vw, 0vh);
 }
 
-.hourly_volume {
+.moving_avg_logscale, .logscale_hourly_volume {
+    display: flex;
+    display: inline-block;
     height: 38vh;
     width: 30vw;
     transform: translate(0.5vw, 0vh);
 }
 
-.logscale_hourly_volume {
+.log_diff_shift, .rolling_mean_std {
+    display: flex;
+    display: inline-block;
     height: 38vh;
     width: 30vw;
-    transform: translate(-0.5vw, 0vh);
-}
-
-.moving_avg_logscale {
-    height: 38vh;
-    width: 30vw;
-    transform: translate(0.5vw, 0vh);
-}
-
-.rolling_mean_std {
-    height: 38vh;
-    width: 30vw;
-    transform: translate(-0.5vw, 0vh);
-}
-
-.log_diff_shift {
-    height: 38vh;
-    width: 30vw;
-    transform: translate(0.5vw, 0vh);
 }
 
 .exp_dec_Weighted_avg {
+    display: flex;
+    display: inline-block;
     height: 55vh;
     width: 45vw;
 }
 
 .resid_seasonality {
+    display: flex;
+    display: inline-block;
     height: 55vh;
     width: 45vw;
 }
 
 .threejs_overview {
+    display: flex;
+    display: inline-block;
     width: 55vw;
     height: 60vh;
 }
 
 .threejs_home {
+    display: flex;
+    display: inline-block;
     width: 55vw;
     height: 60vh;
 }
 
 .threejs_about_me {
+    display: flex;
+    display: inline-block;
     width: 55vw;
     height: 60vh;
 }
 
 .threejs_projects {
+    display: flex;
+    display: inline-block;
     width: 55vw;
     height: 60vh;
 }
 
 .threejs_contact {
+    display: flex;
+    display: inline-block;
     width: 55vw;
     height: 60vh;
 }
@@ -1110,159 +1114,148 @@ i7 {
     }
     
     .bandsoc-frontpage {
-        
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 0vh);
     }
     
     .bandsoc-admin-1 {
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 2vh);
     }
     
     .bandsoc-admin-2 {
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 0vh);
     }
     
     .stripe {
+        display: flex;
         height:50vh;
         width:25vw;
         transform: translate(17vw, 0vh);
     }
     
     .Portfolio-Home {
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 0vh);
     }
     
     .Portfolio-Projects {
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 0vh);
     }
     
     .Portfolio-Contact {
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 0vh);
     }
     
     .Heatmap {
+        display: flex;
         width: 30vw;
         height: 70vh;
         transform: translate(16vw, 0vh);
     }
     
-    .Hist-Pol {
-        width: 20vw;
-        height: 30vh;
+    .Hist-Traf, .Hist-Pol {
+        display: flex;
+        display: inline-block;
+        width: 25vw;
+        height: 60vh;
     }
     
-    .Hist-Traf {
-        width: 20vw;
-        height: 30vh;
-    }
-    
-    .Loadings-Pol {
-        height: 55vh;
-        width: 30vw;
-        transform: translate(-0.5vw, 0px);
-    }
-    
-    .Loadings-Traf {
+    .Loadings-Traf, .Loadings-Pol {
+        display: flex;
+        display: inline-block;
         height: 55vh;
         width: 30vw;
     }
     
-    .Scree-Plot-Pol {
-        height: 30vh;
+    .Scree-Plot-Traf, .Scree-Plot-Pol {
+        display: flex;
+        display: inline-block;
+        height: 50vh;
         width: 30vw;
-        transform: translate(-0.5vw, -0.5vh);
-    }
-    
-    .Scree-Plot-Traf {
-        height: 30vh;
-        width: 30vw;
-        transform: translate(0vw, -0.5vh);
     
     }
     
-    .departures_hourly_volume {
-        height: 38vh;
-        width: 30vw;
-        transform: translate(-0.5vw, 0vh);
+    .hourly_volume, .departures_hourly_volume {
+        display: flex;
+        display: inline-block;
+        height: 50vh;
+        width: 28vw;
     }
     
-    .hourly_volume {
-        height: 38vh;
-        width: 30vw;
-        transform: translate(0.5vw, 0vh);
+    .moving_avg_logscale, .logscale_hourly_volume {
+        display: flex;
+        display: inline-block;
+        height: 50vh;
+        width: 28vw;
     }
     
-    .logscale_hourly_volume {
-        height: 38vh;
-        width: 30vw;
-        transform: translate(-0.5vw, 0vh);
-    }
-    
-    .moving_avg_logscale {
-        height: 38vh;
-        width: 30vw;
-        transform: translate(0.5vw, 0vh);
-    }
-    
-    .rolling_mean_std {
-        height: 38vh;
-        width: 30vw;
-        transform: translate(-0.5vw, 0vh);
-    }
-    
-    .log_diff_shift {
-        height: 38vh;
-        width: 30vw;
-        transform: translate(0.5vw, 0vh);
+    .log_diff_shift, .rolling_mean_std {
+        display: flex;
+        display: inline-block;
+        height: 50vh;
+        width: 28vw;
     }
     
     .exp_dec_Weighted_avg {
-        height: 55vh;
-        width: 45vw;
+        display: flex;
+        display: inline-block;
+        height: 60vh;
+        width: 35vw;
     }
     
     .resid_seasonality {
-        height: 55vh;
-        width: 45vw;
+        display: flex;
+        display: inline-block;
+        height: 60vh;
+        width: 35vw;
     }
     
     .threejs_overview {
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 0vh);
     }
     
     .threejs_home {
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 0vh);
     }
     
     .threejs_about_me {
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 0vh);
     }
     
     .threejs_projects {
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 0vh);
     }
     
     .threejs_contact {
+        display: flex;
         width: 45vw;
         height: 85vh;
         transform: translate(7vw, 0vh);
