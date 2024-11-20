@@ -1809,37 +1809,36 @@ i7 {
 .hourly_volume, .departures_hourly_volume {
     display: flex;
     display: inline-block;
-    height: 18vh;
-    width: 25vw;
+    height: 16vh;
+    width: 26vw;
 }
 
 .moving_avg_logscale, .logscale_hourly_volume {
     display: flex;
     display: inline-block;
-    height: 38vh;
-    width: 30vw;
-    transform: translate(0.5vw, 0vh);
+    height: 16vh;
+    width: 26vw;
 }
 
 .log_diff_shift, .rolling_mean_std {
     display: flex;
     display: inline-block;
-    height: 38vh;
-    width: 30vw;
+    height: 16vh;
+    width: 26vw;
 }
 
 .exp_dec_Weighted_avg {
     display: flex;
     display: inline-block;
-    height: 55vh;
-    width: 45vw;
+    height: 20vh;
+    width: 49vw;
 }
 
 .resid_seasonality {
     display: flex;
     display: inline-block;
-    height: 55vh;
-    width: 45vw;
+    height: 20vh;
+    width: 49vw;
 }
 
 .threejs_overview {
