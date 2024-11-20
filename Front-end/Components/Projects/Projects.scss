@@ -1100,7 +1100,7 @@ i7 {
     i6 {
         font-size: calc(2vh + 2vw);
         position: absolute; // Position it absolutely within its container
-        top: 6vh; // Adjust based on where you want it
+        top: 4vh; // Adjust based on where you want it
         right: -0.1vw;
     
     }
@@ -1260,4 +1260,621 @@ i7 {
         height: 85vh;
         transform: translate(7vw, 0vh);
     }
+}
+
+@media (max-width: 400px) {
+
+.desc-container2 {
+    display: flex;
+    position: absolute; // Position it absolutely within its container
+    top: 27vh; // Adjust based on where you want it
+    left: 27vw; 
+    height: 70vh;
+    text-align: center;
+    flex-direction: column;
+
+     /* Adjust the height as needed */
+    width: 66vw; /* You can adjust the width to fit your design */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    border: 1px solid #ccc; /* Optional: Add a border for visibility */
+    background-color: rgba(51, 108, 206, 0.5); /* Optional: Add a background color */
+    overflow-y: auto; /* Enables vertical scrolling */
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+.button-container-p {
+    display: flex;
+    display: inline-block;
+   padding: 20px;
+   border: 1px solid #ccc;
+   background-color: rgba(51, 108, 206, 0.5);
+   position: absolute;
+   justify-content: space-between;
+   width: 61vw;
+   height:23vh;
+   padding: 10px;
+   //margin: 0 -600px;
+   top: 2vh;
+   left:29.5vw; 
+
+}
+
+.dropdown_p1 {
+    display: flex;
+    position: absolute; // Position it absolutely within its container
+    top: 1vh;
+    left: 3vw; 
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 10vh;
+    width: 15vw;
+    font-size: calc(1vw + 1vh);
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+}
+
+.dropdown_p2 {
+    display: flex;
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 10vh;
+    width: 15vw;
+    top: 1vh;
+    left: 20vw;
+    font-size: calc(1vw + 1vh);
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.dropdown_p3 {
+    display: flex;
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 10vh;
+    width: 20vw;
+    top: 12vh;
+    left: 3vw;
+    font-size: calc(1vw + 1vh);
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.dropdown_p4 {
+    display: flex;
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 10vh;
+    width: 29vw;
+    top: 12vh;
+    left: 25vw;
+    font-size: calc(1vw + 1vh);
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.dropdown_p5 {
+    display: flex;
+    position: absolute;
+    background-color: rgba(51, 108, 206, 0.5); 
+    height: 10vh;
+    width: 20vw;
+    top: 1vh;
+    left: 37vw;
+    font-size: calc(1vw + 1vh);
+    font-family: 'Coolvetica';
+    color: #f2e7bf;
+    border-radius: 10px;
+    border: 2px solid #e7bd42;
+    text-decoration: underline;
+
+}
+
+.button-container .dropdown1:hover {
+    background-color: #e7bd42;
+    color: #336cce;
+  }
+  
+#title  {
+    display: flex;
+    text-align: center;
+    display: inline-block; // Allow padding and margin
+    color: #e7bd42; // Text color
+    text-decoration: none; // Remove underline by default
+    border-radius: 15px;
+    padding: 1vh;
+    font-size: calc(2vh + 2vw);
+    font-family: 'Coolvetica';
+    
+  }
+
+#project1-title {
+    text-align: center;
+    color: #e7bd42;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+
+#project1-1 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+    font-family: 'Coolvetica';
+}
+
+#project1-2 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+    font-family: 'Coolvetica';
+}
+
+#project1-3 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+    font-family: 'Coolvetica';
+}
+
+#project1-4 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+    font-family: 'Coolvetica';
+}
+
+#project1-5 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+    font-family: 'Coolvetica';
+}
+
+#project1-6 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+    font-family: 'Coolvetica';
+}
+
+#project2-title {
+    color: #e7bd42;
+    padding: 1vh;
+    font-size: calc(2vh + 2vw);
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+
+}
+
+#project2-1 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project2-2 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project2-3 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project2-4 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project2-5 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project2-6 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project2-7 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project3-title {
+    color: #e7bd42;
+    padding: 1vh;
+    font-size: calc(2vh + 2vw);
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+
+#project3-1 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project3-2 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project3-3 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project3-4 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project3-5 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project3-6 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project3-7 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project3-8 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project3-9 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project4-title {
+    color: #e7bd42;
+    padding: 1vh;
+    font-size: calc(2vh + 2vw);
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+
+#project4-1 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project4-2 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project4-2 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project4-3 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project4-4 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project4-5 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project4-6 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project4-7 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project5-title {
+    color: #e7bd42;
+    padding: 1vh;
+    font-size: calc(2vh + 2vw);
+    text-decoration: underline;
+    font-family: 'Coolvetica';
+}
+
+#project5-1 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project5-2 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project5-3 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#project5-4 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+
+#projects5-5 {
+    color: #f2e7bf;
+    padding: 1vh;
+    font-size: calc(1vh + 1vw);
+}
+  
+.arrow3 {
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+}
+
+.arrow4 {
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+}
+
+.arrow5 {
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+}
+
+.arrow6 {
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+}
+
+.arrow7 {
+    transform: rotate(270deg);
+    transition: 0.2s ease;
+}
+
+i3 {
+    font-size: calc(2.3vh + 2.3vw);
+    position: absolute; // Position it absolutely within its container
+    top: 6vh; // Adjust based on where you want it
+    right: 3vw;
+
+  }
+
+i4 {
+    font-size: calc(2.3vh + 2.3vw);
+    position: absolute; // Position it absolutely within its container
+    top: 6vh; // Adjust based on where you want it
+    right: 3vw;
+
+  }
+
+i5 {
+    font-size: calc(2.3vh + 2.3vw);
+    position: absolute; // Position it absolutely within its container
+    top: 6vh; // Adjust based on where you want it
+    right: 5vw;
+
+}
+
+i6 {
+    font-size: calc(2.3vh + 2.3vw);
+    position: absolute; // Position it absolutely within its container
+    top: 6vh; // Adjust based on where you want it
+    right: 9.5vw;
+
+}
+
+i7 {
+    font-size: calc(2.3vh + 2.3vw);
+    position: absolute; // Position it absolutely within its container
+    top: 6vh; // Adjust based on where you want it
+    right: 5vw;
+
+}
+
+.bandsoc-frontpage {
+    display: flex;
+    width: 60vw;
+    height: 65vh;
+    transform: translate(0vw, 0vh);
+}
+
+.bandsoc-admin-1 {
+    display: flex;
+    width: 60vw;
+    height: 65vh;
+    transform: translate(0vw, 1vh);
+}
+
+.bandsoc-admin-2 {
+    display: flex;
+    width: 60vw;
+    height: 65vh;
+    transform: translate(0vw, 0vh);
+}
+
+.stripe {
+    display: flex;
+    display: inline-block;
+    height:50vh;
+    width:35vw;
+    transform: translate(0vw, 0vh);
+}
+
+.Portfolio-Home {
+    display: flex;
+    display: inline-block;
+    width: 55vw;
+    height: 60vh;
+}
+
+.Portfolio-Projects {
+    display: flex;
+    display: inline-block;
+    width: 55vw;
+    height: 60vh;
+}
+
+.Portfolio-Contact {
+    display: flex;
+    display: inline-block;
+    width: 55vw;
+    height: 60vh;
+}
+
+.Heatmap {
+    display: flex;
+    display: inline-block;
+    height: 45vh;
+    width: 30vw;
+}
+
+.Hist-Traf, .Hist-Pol {
+    display: flex;
+    display: inline-block;
+    height: 45vh;
+    width: 30vw;
+}
+
+.Loadings-Traf, .Loadings-Pol {
+    display: flex;
+    display: inline-block;
+    height: 55vh;
+    width: 30vw;
+}
+
+.Scree-Plot-Traf, .Scree-Plot-Pol {
+    display: flex;
+    display: inline-block;
+    height: 30vh;
+    width: 30vw;
+    transform: translate(0vw, -1vh);
+
+}
+
+.hourly_volume, .departures_hourly_volume {
+    display: flex;
+    display: inline-block;
+    height: 38vh;
+    width: 30vw;
+}
+
+.moving_avg_logscale, .logscale_hourly_volume {
+    display: flex;
+    display: inline-block;
+    height: 38vh;
+    width: 30vw;
+    transform: translate(0.5vw, 0vh);
+}
+
+.log_diff_shift, .rolling_mean_std {
+    display: flex;
+    display: inline-block;
+    height: 38vh;
+    width: 30vw;
+}
+
+.exp_dec_Weighted_avg {
+    display: flex;
+    display: inline-block;
+    height: 55vh;
+    width: 45vw;
+}
+
+.resid_seasonality {
+    display: flex;
+    display: inline-block;
+    height: 55vh;
+    width: 45vw;
+}
+
+.threejs_overview {
+    display: flex;
+    display: inline-block;
+    width: 55vw;
+    height: 60vh;
+}
+
+.threejs_home {
+    display: flex;
+    display: inline-block;
+    width: 55vw;
+    height: 60vh;
+}
+
+.threejs_about_me {
+    display: flex;
+    display: inline-block;
+    width: 55vw;
+    height: 60vh;
+}
+
+.threejs_projects {
+    display: flex;
+    display: inline-block;
+    width: 55vw;
+    height: 60vh;
+}
+
+.threejs_contact {
+    display: flex;
+    display: inline-block;
+    width: 55vw;
+    height: 60vh;
+}
+
 }
