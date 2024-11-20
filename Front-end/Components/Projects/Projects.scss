@@ -1779,29 +1779,29 @@ i7 {
 .Heatmap {
     display: flex;
     display: inline-block;
-    height: 45vh;
-    width: 30vw;
+    height: 20vh;
+    width: 40vw;
 }
 
 .Hist-Traf, .Hist-Pol {
     display: flex;
     display: inline-block;
-    height: 45vh;
-    width: 30vw;
+    height: 18vh;
+    width: 25vw;
 }
 
 .Loadings-Traf, .Loadings-Pol {
     display: flex;
     display: inline-block;
-    height: 55vh;
-    width: 30vw;
+    height: 18vh;
+    width: 25vw;
 }
 
 .Scree-Plot-Traf, .Scree-Plot-Pol {
     display: flex;
     display: inline-block;
-    height: 30vh;
-    width: 30vw;
+    height: 18vh;
+    width: 25vw;
     transform: translate(0vw, -1vh);
 
 }
@@ -1809,8 +1809,8 @@ i7 {
 .hourly_volume, .departures_hourly_volume {
     display: flex;
     display: inline-block;
-    height: 38vh;
-    width: 30vw;
+    height: 18vh;
+    width: 25vw;
 }
 
 .moving_avg_logscale, .logscale_hourly_volume {
