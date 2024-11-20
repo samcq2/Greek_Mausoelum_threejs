@@ -27,8 +27,8 @@
    position: absolute;
    display: flex;
    justify-content: space-between;
-   width: 14.1vw;
-   height:60vh;
+   width: 15.4vw;
+   height:64vh;
    padding: 10px;
    //margin: 0 -600px;
    top: 10vh;
@@ -1110,58 +1110,62 @@ i7 {
     }
     
     .bandsoc-frontpage {
-        width: 60vw;
-        height: 65vh;
-        transform: translate(0vw, 0vh);
+        
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
     }
     
     .bandsoc-admin-1 {
-        width: 60vw;
-        height: 65vh;
-        transform: translate(0vw, 1vh);
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 2vh);
     }
     
     .bandsoc-admin-2 {
-        width: 60vw;
-        height: 65vh;
-        transform: translate(0vw, 0vh);
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
     }
     
     .stripe {
         height:50vh;
-        width:35vw;
-        transform: translate(0vw, 0vh);
+        width:25vw;
+        transform: translate(17vw, 0vh);
     }
     
     .Portfolio-Home {
-        width: 55vw;
-        height: 60vh;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
     }
     
     .Portfolio-Projects {
-        width: 55vw;
-        height: 60vh;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
     }
     
     .Portfolio-Contact {
-        width: 55vw;
-        height: 60vh;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
     }
     
     .Heatmap {
-        height: 45vh;
         width: 30vw;
+        height: 70vh;
+        transform: translate(16vw, 0vh);
     }
     
     .Hist-Pol {
-        height: 45vh;
-        width: 30vw;
-        transform: translate(-10px, 0px);
+        width: 20vw;
+        height: 30vh;
     }
     
     .Hist-Traf {
-        height: 45vh;
-        width: 30vw;
+        width: 20vw;
+        height: 30vh;
     }
     
     .Loadings-Pol {
@@ -1235,27 +1239,32 @@ i7 {
     }
     
     .threejs_overview {
-        width: 55vw;
-        height: 60vh;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
     }
     
     .threejs_home {
-        width: 55vw;
-        height: 60vh;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
     }
     
     .threejs_about_me {
-        width: 55vw;
-        height: 60vh;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
     }
     
     .threejs_projects {
-        width: 55vw;
-        height: 60vh;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
     }
     
     .threejs_contact {
-        width: 55vw;
-        height: 60vh;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
     }
 }
