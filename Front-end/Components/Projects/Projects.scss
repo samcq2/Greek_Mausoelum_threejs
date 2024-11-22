@@ -639,7 +639,7 @@ i7 {
     height: 60vh;
 }
 
-@media (max-height: 320px) {
+@media (max-height: 290px) {
     .desc-container2 {
         display: flex;
         position: absolute; // Position it absolutely within its container
@@ -1262,7 +1262,7 @@ i7 {
     }
 }
 
-@media (max-height: 500px) {
+@media (min-height: 291px) and (max-height: 500px) {
     .desc-container2 {
         display: flex;
         position: absolute; // Position it absolutely within its container

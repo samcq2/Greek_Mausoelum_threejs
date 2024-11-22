@@ -343,7 +343,7 @@
 
 }
 
-@media (max-height: 320px) {
+@media (max-height: 290px) {
   .nav-bar {
     background:#336cce;
     width: 8vw;
@@ -515,7 +515,7 @@
 
 }
 
-@media (max-height: 500px) {
+@media (min-height: 291x) and (max-height: 500px) {
   .nav-bar {
     background:#336cce;
     width: 8vw;

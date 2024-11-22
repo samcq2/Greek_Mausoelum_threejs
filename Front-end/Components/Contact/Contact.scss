@@ -261,7 +261,7 @@
 
   }
 
-  @media (max-height: 320px) {
+  @media (max-height: 290px) {
     .contact {
       position: absolute;
       display: flex; // Position it absolutely within its container
@@ -395,7 +395,7 @@
 
   }
 
-  @media (max-height: 500px) {
+  @media (min-height: 291x) and (max-height: 500px) {
     .contact {
       position: absolute;
       display: flex; // Position it absolutely within its container
