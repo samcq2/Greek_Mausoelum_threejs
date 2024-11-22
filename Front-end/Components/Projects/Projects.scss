@@ -639,7 +639,7 @@ i7 {
     height: 60vh;
 }
 
-@media (max-height: 480px) {
+@media (max-height: 290px) {
     .desc-container2 {
         display: flex;
         position: absolute; // Position it absolutely within its container
@@ -1261,6 +1261,629 @@ i7 {
         transform: translate(7vw, 0vh);
     }
 }
+
+@media (max-height: 500px) {
+    .desc-container2 {
+        display: flex;
+        position: absolute; // Position it absolutely within its container
+        top: 10vh; // Adjust based on where you want it
+        left: 30vw; 
+        height: 80svh;
+        text-align: center;
+        flex-direction: column;
+    
+         /* Adjust the height as needed */
+        width: 65vw; /* You can adjust the width to fit your design */
+        margin: 0 auto; /* Center the container */
+        padding: 20px;
+        border: 1px solid #ccc; /* Optional: Add a border for visibility */
+        background-color: rgba(51, 108, 206, 0.5); /* Optional: Add a background color */
+        overflow-y: auto; /* Enables vertical scrolling */
+        overflow-x: hidden;
+        text-align: center;
+      }
+    
+    .button-container-p {
+       display: flex;
+       padding: 2px;
+       border: 1px solid #ccc;
+       background-color: rgba(51, 108, 206, 0.5);
+       position: absolute;
+       display: flex;
+       justify-content: space-between;
+       width: 19vw;
+       height:80svh;
+       text-align: center;
+       padding: 10px;
+       //margin: 0 -600px;
+       top: 10vh;
+       left:10vw; 
+    
+    }
+    
+    .dropdown_p1 {
+        display: flex;
+        position: absolute; // Position it absolutely within its container
+        top: 2vh;
+        left: 0.6vw; 
+        background-color: rgba(51, 108, 206, 0.5); 
+        height: 10vh;
+        width: 17vw;
+        font-size: calc(1vw + 1vh);
+        font-family: 'Coolvetica';
+        color: #f2e7bf;
+        border-radius: 2vh;
+        border: calc(0.15vh + 0.15vw) solid #e7bd42;
+        text-decoration: underline;
+    }
+    
+    .dropdown_p2 {
+        display: flex;
+        position: absolute;
+        text-align: left;
+        background-color: rgba(51, 108, 206, 0.5); 
+        height: 10vh;
+        width: 17vw;
+        top: 14vh;
+        left: 0.6vw;
+        font-size: calc(1vw + 1vh);
+        font-family: 'Coolvetica';
+        color: #f2e7bf;
+        border-radius: 2vh;
+        border: calc(0.15vh + 0.15vw) solid #e7bd42;
+        text-decoration: underline;
+    
+    }
+    
+    .dropdown_p3 {
+        position: absolute;
+        text-align: left;
+        background-color: rgba(51, 108, 206, 0.5); 
+        height: 16vh;
+        width: 17vw;
+        top: 42vh;
+        left: 0.6vw;
+        font-size: calc(1vw + 1vh);
+        font-family: 'Coolvetica';
+        color: #f2e7bf;
+        border-radius: 2vh;
+        border: calc(0.15vh + 0.15vw) solid #e7bd42;
+        text-decoration: underline;
+    
+    }
+    
+    .dropdown_p4 {
+        position: absolute;
+        text-align: left;
+        background-color: rgba(51, 108, 206, 0.5); 
+        height: 16vh;
+        width: 17vw;
+        top: 61vh;
+        left: 0.6vw;
+        font-size: calc(1vw + 1vh);
+        font-family: 'Coolvetica';
+        color: #f2e7bf;
+        border-radius: 2vh;
+        border: calc(0.15vh + 0.15vw) solid #e7bd42;
+        text-decoration: underline;
+    
+    }
+    
+    .dropdown_p5 {
+        position: absolute;
+        text-align: left;
+        background-color: rgba(51, 108, 206, 0.5); 
+        height: 14vh;
+        width: 17vw;
+        top: 26vh;
+        left: 0.6vw;
+        font-size: calc(1vw + 1vh);
+        font-family: 'Coolvetica';
+        color: #f2e7bf;
+        border-radius: 2vh;
+        border: calc(0.15vh + 0.15vw) solid #e7bd42;
+        text-decoration: underline;
+    
+    }
+    
+    .button-container .dropdown1:hover {
+        background-color: #e7bd42;
+        color: #336cce;
+      }
+      
+    #title  {
+        text-align: center;
+        display: inline-block; // Allow padding and margin
+        color: #e7bd42; // Text color
+        text-decoration: none; // Remove underline by default
+        padding: 1vh;
+        border-radius: 15px;
+        font-size: calc(2vh + 2vw);
+        font-family: 'Coolvetica';
+        
+      }
+    
+    #project1-title {
+        text-align: center;
+        color: #e7bd42;
+        padding: 1vh;
+        font-size: calc(2vh + 2vw);
+        text-decoration: underline;
+        font-family: 'Coolvetica';
+    }
+    
+    #project1-1 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+        font-family: 'Coolvetica';
+    }
+    
+    #project1-2 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+        font-family: 'Coolvetica';
+    }
+    
+    #project1-3 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+        font-family: 'Coolvetica';
+    }
+    
+    #project1-4 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+        font-family: 'Coolvetica';
+    }
+    
+    #project1-5 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+        font-family: 'Coolvetica';
+    }
+    
+    #project1-6 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+        font-family: 'Coolvetica';
+    }
+    
+    #project2-title {
+        color: #e7bd42;
+        padding: 1vh;
+        font-size: calc(2vh + 2vw);
+        text-decoration: underline;
+        font-family: 'Coolvetica';
+    
+    }
+    
+    #project2-1 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project2-2 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project2-3 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project2-4 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project2-5 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project2-6 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project2-7 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project3-title {
+        color: #e7bd42;
+        padding: 1vh;
+        font-size: calc(2vh + 2vw);
+        text-decoration: underline;
+        font-family: 'Coolvetica';
+    }
+    
+    #project3-1 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project3-2 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project3-3 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project3-4 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project3-5 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project3-6 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project3-7 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project3-8 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project3-9 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project4-title {
+        color: #e7bd42;
+        padding: 1vh;
+        font-size: calc(2vh + 2vw);
+        text-decoration: underline;
+        font-family: 'Coolvetica';
+    }
+    
+    #project4-1 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project4-2 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project4-2 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project4-3 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project4-4 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project4-5 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project4-6 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project4-7 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project5-title {
+        color: #e7bd42;
+        padding: 1vh;
+        font-size: calc(2vh + 2vw);
+        text-decoration: underline;
+        font-family: 'Coolvetica';
+    }
+    
+    #project5-1 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project5-2 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project5-3 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #project5-4 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+    
+    #projects5-5 {
+        color: #f2e7bf;
+        padding: 1vh;
+        font-size: calc(1vh + 1vw);
+    }
+      
+    .arrow3 {
+        transform: rotate(270deg);
+        transition: 0.2s ease;
+    }
+    
+    .arrow4 {
+        
+        transform: rotate(270deg);
+        transition: 0.2s ease;
+        
+    }
+    
+    .arrow5 {
+        
+        transform: rotate(270deg);
+        transition: 0.2s ease;
+        
+    }
+    
+    .arrow6 {
+        
+        transform: rotate(270deg);
+        transition: 0.2s ease;
+        
+    }
+    
+    .arrow7 {
+        
+        transform: rotate(270deg);
+        transition: 0.2s ease;
+        
+    }
+    
+    
+    
+    i3 {
+        font-size: calc(2vh + 2vw);
+        position: absolute; // Position it absolutely within its container
+        top: 0.3vh; // Adjust based on where you want it
+        right: -0.1vw;
+    
+      }
+    
+    i4 {
+        font-size: calc(2vh + 2vw);
+        position: absolute; // Position it absolutely within its container
+        top: 0.1vh; // Adjust based on where you want it
+        right: -0.1vw;
+    
+      }
+    
+    i5 {
+        font-size: calc(2vh + 2vw);
+        position: absolute; // Position it absolutely within its container
+        top: 1vh; // Adjust based on where you want it
+        right: -0.1vw;
+    
+    }
+    
+    i6 {
+        font-size: calc(2vh + 2vw);
+        position: absolute; // Position it absolutely within its container
+        top: 4vh; // Adjust based on where you want it
+        right: -0.1vw;
+    
+    }
+    
+    i7 {
+        font-size: calc(2vh + 2vw);
+        position: absolute; // Position it absolutely within its container
+        top: 1vh; // Adjust based on where you want it
+        right: -1px;
+    
+    }
+    
+    .bandsoc-frontpage {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
+    }
+    
+    .bandsoc-admin-1 {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 2vh);
+    }
+    
+    .bandsoc-admin-2 {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
+    }
+    
+    .stripe {
+        display: flex;
+        height:50vh;
+        width:25vw;
+        transform: translate(17vw, 0vh);
+    }
+    
+    .Portfolio-Home {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
+    }
+    
+    .Portfolio-Projects {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
+    }
+    
+    .Portfolio-Contact {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
+    }
+    
+    .Heatmap {
+        display: flex;
+        width: 30vw;
+        height: 70vh;
+        transform: translate(16vw, 0vh);
+    }
+    
+    .Hist-Traf, .Hist-Pol {
+        display: flex;
+        display: inline-block;
+        width: 25vw;
+        height: 60vh;
+    }
+    
+    .Loadings-Traf, .Loadings-Pol {
+        display: flex;
+        display: inline-block;
+        height: 55vh;
+        width: 28vw;
+    }
+    
+    .Scree-Plot-Traf, .Scree-Plot-Pol {
+        display: flex;
+        display: inline-block;
+        height: 50vh;
+        width: 28vw;
+    
+    }
+    
+    .hourly_volume, .departures_hourly_volume {
+        display: flex;
+        display: inline-block;
+        height: 50vh;
+        width: 28vw;
+    }
+    
+    .moving_avg_logscale, .logscale_hourly_volume {
+        display: flex;
+        display: inline-block;
+        height: 50vh;
+        width: 28vw;
+    }
+    
+    .log_diff_shift, .rolling_mean_std {
+        display: flex;
+        display: inline-block;
+        height: 50vh;
+        width: 28vw;
+    }
+    
+    .exp_dec_Weighted_avg {
+        display: flex;
+        display: inline-block;
+        height: 60vh;
+        width: 35vw;
+    }
+    
+    .resid_seasonality {
+        display: flex;
+        display: inline-block;
+        height: 60vh;
+        width: 35vw;
+    }
+    
+    .threejs_overview {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
+    }
+    
+    .threejs_home {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
+    }
+    
+    .threejs_about_me {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
+    }
+    
+    .threejs_projects {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
+    }
+    
+    .threejs_contact {
+        display: flex;
+        width: 45vw;
+        height: 85vh;
+        transform: translate(7vw, 0vh);
+    }
+  }
 
 @media (max-width: 480px) {
 
