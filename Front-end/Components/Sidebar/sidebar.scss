@@ -87,7 +87,7 @@
 
       &:after {
         content: '';
-        font-size: calc(1vw + 1vh);
+        font-size: calc(0.8vw + 0.8vh);
         letter-spacing: 1px;
         position: 1px;
         bottom: 0;
@@ -347,7 +347,7 @@
   .nav-bar {
     background:#336cce;
     width: 8vw;
-    height: 100vh;
+    height: 100svh;
     position: absolute;
     display: flex;
     top: 0;
