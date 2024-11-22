@@ -1267,7 +1267,7 @@ i7 {
         display: flex;
         position: absolute; // Position it absolutely within its container
         top: 5svh; // Adjust based on where you want it
-        left: 30vw; 
+        left: 32vw; 
         height: 80svh;
         text-align: center;
         flex-direction: column;
@@ -1291,7 +1291,7 @@ i7 {
        position: absolute;
        display: flex;
        justify-content: space-between;
-       width: 19vw;
+       width: 20vw;
        height:89svh;
        text-align: center;
        padding: 10px;
@@ -1305,10 +1305,10 @@ i7 {
         display: flex;
         position: absolute; // Position it absolutely within its container
         top: 2vh;
-        left: 0.6vw; 
+        left: 0.9vw; 
         background-color: rgba(51, 108, 206, 0.5); 
         height: 10svh;
-        width: 17vw;
+        width: 18vw;
         font-size: calc(1vw + 1vh);
         font-family: 'Coolvetica';
         color: #f2e7bf;
@@ -1323,9 +1323,9 @@ i7 {
         text-align: left;
         background-color: rgba(51, 108, 206, 0.5); 
         height: 10svh;
-        width: 17vw;
+        width: 18vw;
         top: 14vh;
-        left: 0.6vw;
+        left: 0.9vw;
         font-size: calc(1vw + 1vh);
         font-family: 'Coolvetica';
         color: #f2e7bf;
@@ -1340,9 +1340,9 @@ i7 {
         text-align: left;
         background-color: rgba(51, 108, 206, 0.5); 
         height: 16svh;
-        width: 17vw;
+        width: 18vw;
         top: 42vh;
-        left: 0.6vw;
+        left: 0.9vw;
         font-size: calc(1vw + 1vh);
         font-family: 'Coolvetica';
         color: #f2e7bf;
@@ -1357,9 +1357,9 @@ i7 {
         text-align: left;
         background-color: rgba(51, 108, 206, 0.5); 
         height: 16svh;
-        width: 17vw;
+        width: 18vw;
         top: 61vh;
-        left: 0.6vw;
+        left: 0.9vw;
         font-size: calc(1vw + 1vh);
         font-family: 'Coolvetica';
         color: #f2e7bf;
@@ -1374,9 +1374,9 @@ i7 {
         text-align: left;
         background-color: rgba(51, 108, 206, 0.5); 
         height: 14svh;
-        width: 17vw;
+        width: 18vw;
         top: 26vh;
-        left: 0.6vw;
+        left: 0.9vw;
         font-size: calc(1vw + 1vh);
         font-family: 'Coolvetica';
         color: #f2e7bf;
@@ -1699,7 +1699,7 @@ i7 {
     i3 {
         font-size: calc(2vh + 2vw);
         position: absolute; // Position it absolutely within its container
-        top: 0.3vh; // Adjust based on where you want it
+        top: 3vh; // Adjust based on where you want it
         right: -0.1vw;
     
       }
@@ -1707,7 +1707,7 @@ i7 {
     i4 {
         font-size: calc(2vh + 2vw);
         position: absolute; // Position it absolutely within its container
-        top: 0.1vh; // Adjust based on where you want it
+        top: 3vh; // Adjust based on where you want it
         right: -0.1vw;
     
       }
@@ -1715,7 +1715,7 @@ i7 {
     i5 {
         font-size: calc(2vh + 2vw);
         position: absolute; // Position it absolutely within its container
-        top: 1vh; // Adjust based on where you want it
+        top: 5vh; // Adjust based on where you want it
         right: -0.1vw;
     
     }
@@ -1723,7 +1723,7 @@ i7 {
     i6 {
         font-size: calc(2vh + 2vw);
         position: absolute; // Position it absolutely within its container
-        top: 4vh; // Adjust based on where you want it
+        top: 5vh; // Adjust based on where you want it
         right: -0.1vw;
     
     }
@@ -1731,7 +1731,7 @@ i7 {
     i7 {
         font-size: calc(2vh + 2vw);
         position: absolute; // Position it absolutely within its container
-        top: 1vh; // Adjust based on where you want it
+        top: 4vh; // Adjust based on where you want it
         right: -1px;
     
     }

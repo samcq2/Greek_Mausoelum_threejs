@@ -395,13 +395,13 @@
 
   }
 
-  @media (min-height: 291x) and (max-height: 500px) {
+  @media (min-height: 291px) and (max-height: 500px) {
     .contact {
       position: absolute;
       display: flex; // Position it absolutely within its container
       top: 5vh; // Adjust based on where you want it
       left: 35vw; 
-      height: 80svh;
+      height: 75svh;
       flex-direction: column;
   
        /* Adjust the height as needed */
