@@ -1795,7 +1795,7 @@ i7 {
     .Hist-Traf, .Hist-Pol {
         display: flex;
         display: inline-block;
-        width: 25vw;
+        width: 23vw;
         height: 60vh;
     }
     
@@ -1803,14 +1803,14 @@ i7 {
         display: flex;
         display: inline-block;
         height: 55vh;
-        width: 28vw;
+        width: 23vw;
     }
     
     .Scree-Plot-Traf, .Scree-Plot-Pol {
         display: flex;
         display: inline-block;
         height: 50vh;
-        width: 28vw;
+        width: 23vw;
     
     }
     
@@ -1818,21 +1818,21 @@ i7 {
         display: flex;
         display: inline-block;
         height: 50vh;
-        width: 28vw;
+        width: 23vw;
     }
     
     .moving_avg_logscale, .logscale_hourly_volume {
         display: flex;
         display: inline-block;
         height: 50vh;
-        width: 28vw;
+        width: 23vw;
     }
     
     .log_diff_shift, .rolling_mean_std {
         display: flex;
         display: inline-block;
         height: 50vh;
-        width: 28vw;
+        width: 23vw;
     }
     
     .exp_dec_Weighted_avg {
@@ -1851,37 +1851,37 @@ i7 {
     
     .threejs_overview {
         display: flex;
+        display: inline-block;
         width: 45vw;
         height: 85vh;
-        transform: translate(7vw, 0vh);
     }
     
     .threejs_home {
         display: flex;
+        display: inline-block;
         width: 45vw;
         height: 85vh;
-        transform: translate(7vw, 0vh);
     }
     
     .threejs_about_me {
         display: flex;
+        display: inline-block;
         width: 45vw;
         height: 85vh;
-        transform: translate(7vw, 0vh);
     }
     
     .threejs_projects {
         display: flex;
+        display: inline-block;
         width: 45vw;
         height: 85vh;
-        transform: translate(7vw, 0vh);
     }
     
     .threejs_contact {
         display: flex;
+        display: inline-block
         width: 45vw;
         height: 85vh;
-        transform: translate(7vw, 0vh);
     }
   }
 
